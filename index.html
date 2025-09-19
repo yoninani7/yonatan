@@ -141,14 +141,10 @@
             left: 0;
             width: 0%;
             height: 100%;
-            background: rgba(255, 255, 255, 0.1);
             z-index: -1;
             transition: var(--transition);
         }
 
-        .btn:hover::before {
-            width: 100%;
-        }
 
         .btn-primary {
             background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
@@ -170,7 +166,6 @@
 
         .btn-outline:hover {
             background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
-
             color: white;
             border: transparent;
         }
@@ -665,7 +660,7 @@
             font-size: 0.95rem;
         }
 
-        .skill-tag:hover {  
+        .skill-tag:hover {
             transform: translateY(-3px);
             box-shadow: 0 10px 20px rgba(52, 152, 219, 0.2);
         }
@@ -882,15 +877,15 @@
         .contact-content {
             display: grid;
             grid-template-columns: 1fr 2.5fr;
-            gap: 5rem; 
-            
+            gap: 5rem;
+
         }
 
         .contact-info {
-            display: flex; 
+            display: flex;
             flex-direction: column;
             gap: 2.5rem;
-            align-items: flex-end; 
+            align-items: flex-end;
         }
 
         .contact-item {
@@ -1020,13 +1015,13 @@
         .compact-footer {
             background: var(--dark);
             color: white;
-            padding: 40px 0 20px; 
-            width: 99.5%;  
-            border-radius: 12px; 
+            padding: 40px 0 20px;
+            width: 99.5%;
+            border-radius: 12px;
             margin: 0 auto;
-             margin-top: 50px;
-             margin-bottom: 10px; 
-            
+            margin-top: 50px;
+            margin-bottom: 10px;
+
         }
 
         .footer-content {
@@ -1113,8 +1108,8 @@
         }
 
         .social-link:hover {
-            background: var(--gold);
-            border-color: var(--gold);
+            background: rgba(255, 255, 255, 0.925);
+            color: var(--primary);
             transform: translateY(-2px);
         }
 
@@ -1308,7 +1303,7 @@
     <!-- Header & Navigation -->
     <header class="header" id="header">
         <div class="container nav-container">
-            <img src="assets/img/yklogo.png" alt="Logo" class="Logo">
+            <a href="index.html"><img src="assets/img/yklogo.png" alt="Logo" class="Logo"></a>
 
             <ul class="nav-menu">
                 <li><a href="#home" class="nav-link">Home</a></li>
@@ -1500,7 +1495,7 @@
                 <div class="pricing-card">
                     <div class="pricing-header">
                         <h4>Basic Web</h4>
-                        <div class="price">15,000<span>Birr</span></div>
+                        <div class="price">18,000<span>Birr</span></div>
                     </div>
                     <ul class="pricing-features">
                         <li><i class="fas fa-check"></i> Static website</li>
@@ -1518,7 +1513,7 @@
                     <div class="popular-badge">RECOMMENDED</div>
                     <div class="pricing-header">
                         <h4>ProSite Plus</h4>
-                        <div class="price">20,000<span>Birr</span></div>
+                        <div class="price">25,000<span>Birr</span></div>
                     </div>
                     <ul class="pricing-features">
                         <li><i class="fas fa-check"></i> Dynamic website</li>
@@ -1563,18 +1558,18 @@
 
             <div class="contact-content">
                 <div class="contact-info">
-                    <div class="contact-item"> 
-                        <i class="fas fa-map-marker-alt" style="font-size: 25px;"></i> &nbsp;&nbsp;&nbsp; 
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt" style="font-size: 25px;"></i> &nbsp;&nbsp;&nbsp;
                         <div class="contact-details">
                             <h4>Location</h4>
                             <p>Alembank, Addis Ababa, Ethiopia</p>
                         </div>
                     </div>
 
-                    <div class="contact-item"> 
-                        <i class="fas fa-envelope" style="font-size: 25px;  "></i> &nbsp;&nbsp;&nbsp; 
+                    <div class="contact-item">
+                        <i class="fas fa-envelope" style="font-size: 25px;  "></i> &nbsp;&nbsp;&nbsp;
                         <div class="contact-details">
-                            
+
                             <h4>Email</h4>
                             <p>yonsbreak7@gmail.com</p>
                         </div>
@@ -1582,7 +1577,7 @@
 
                     <div class="contact-item">
 
-                        <i class="fas fa-phone" style="font-size: 25px;  "></i> &nbsp;&nbsp;&nbsp; 
+                        <i class="fas fa-phone" style="font-size: 25px;  "></i> &nbsp;&nbsp;&nbsp;
                         <div class="contact-details">
                             <h4>Call</h4>
                             <p>+2519-67-28-56-00</p>
@@ -1644,12 +1639,14 @@
                 </div>
             </div>
         </div>
-    </section> 
+    </section>
     <footer class="compact-footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <img src="assets/img/yklogo.png" alt="Yonatan Kassahun" class="footer-logo">
+                    <a href="index.html">
+                        <img src="assets/img/yklogo.png" alt="Yonatan Kassahun" class="footer-logo">
+                    </a>
                     <div class="brand-text">
                         <div>Yonatan Kassahun</div>
                         <div class="footer-tagline">UI/UX Designer & Developer</div>
@@ -1881,4 +1878,3 @@
 </body>
 
 </html>
-
