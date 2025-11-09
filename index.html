@@ -4,7 +4,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yonatan Kassahun | UI/UX Designer & Developer</title>
+    <title>Yonatan Kassahun | UI/UX Designer & Web Developer | Addis Ababa</title>
+    <meta name="description" content="Professional UI/UX Designer and Web Developer in Addis Ababa, Ethiopia. Specializing in responsive web design, development, and digital solutions. Get custom websites starting from 18,000 Birr.">
+    <meta name="keywords" content="yonatan, web developer, Addis Ababa, Ethiopia, website design, web development, responsive design, SEO optimization,yonatan ethiopia">
+    <meta name="author" content="Yonatan Kassahun">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Yonatan Kassahun | UI/UX Designer & Web Developer">
+    <meta property="og:description" content="Professional UI/UX Designer and Web Developer in Addis Ababa, Ethiopia. Creating engaging digital experiences.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourwebsite.com">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://yourwebsite.com">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Yonatan Kassahun",
+        "jobTitle": "UI/UX Designer & Web Developer",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Addis Ababa",
+            "addressCountry": "Ethiopia"
+        },
+        "email": "yonsbreak7@gmail.com",
+        "telephone": "+251-967-28-56-00",
+        "url": "https://yourwebsite.com",
+        "sameAs": [
+            "https://t.me/Yoni_K",
+            "https://www.facebook.com/profile.php?id=100006299029078",
+            "https://www.instagram.com/yoninani7/"
+        ]
+    }
+    </script>
+
     <link rel="icon" href="assets/img/yklogowhite.png" sizes="16x16" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link
@@ -12,24 +48,31 @@
         rel="stylesheet">
     <style>
         :root {
-            --primary: #2c3e50;
-            --secondary: #1a1a2e;
+            --primary: #1a1f36;
+            --secondary: #2d3748;
             --accent: #d4af37;
             --gold: #d4af37;
-            --light: #f8f9fa;
-            --dark: #2c3e50;
-            --text: #2c3e50;
-            --text-light: #6c757d;
-            --transition: all 0.3s ease;
-            --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
-            --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.12);
-            --shadow-lg: 0 8px 28px rgba(0, 0, 0, 0.15);
+            --light: #f8fafc;
+            --dark: #1a202c;
+            --text: #2d3748;
+            --text-light: #718096;
+            --transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            --shadow-sm: 0 2px 15px rgba(0, 0, 0, 0.08);
+            --shadow-md: 0 8px 30px rgba(0, 0, 0, 0.12);
+            --shadow-lg: 0 15px 40px rgba(0, 0, 0, 0.15);
+            --gradient: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            --gradient-gold: linear-gradient(135deg, var(--accent) 0%, #d2863a 100%);
         }
 
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 100px;
         }
 
         body {
@@ -52,6 +95,23 @@
             letter-spacing: -0.02em;
         }
 
+        /* Improved heading hierarchy for SEO */
+        h1 {
+            font-size: 2.5em;
+        }
+
+        h2 {
+            font-size: 2em;
+        }
+
+        h3 {
+            font-size: 1.75em;
+        }
+
+        h4 {
+            font-size: 1.5em;
+        }
+
         a {
             text-decoration: none;
             color: inherit;
@@ -68,6 +128,12 @@
             display: block;
         }
 
+        /* Add alt text styling for images */
+        img[alt] {
+            font-style: italic;
+            color: var(--text-light);
+        }
+
         .container {
             width: 90%;
             max-width: 1200px;
@@ -75,10 +141,12 @@
             padding: 0 15px;
         }
 
-        .section {}
+        .section {
+            padding: 100px 0;
+        }
 
         .section-title {
-            font-size: 2.75rem;
+            font-size: 3rem;
             text-align: center;
             margin-bottom: 1.5rem;
             color: var(--dark);
@@ -94,7 +162,7 @@
             transform: translateX(-50%);
             width: 80px;
             height: 4px;
-            background: linear-gradient(135deg, var(--secondary) 0%, var(--accent) 100%);
+            background: var(--gradient-gold);
             border-radius: 2px;
         }
 
@@ -132,6 +200,7 @@
             position: relative;
             overflow: hidden;
             z-index: 1;
+            border: none;
         }
 
         .btn::before {
@@ -140,22 +209,25 @@
             top: 0;
             left: 0;
             width: 0%;
-            height: 100%;
+            height: 100%; 
             z-index: -1;
             transition: var(--transition);
         }
 
+        .btn:hover::before {
+            width: 100%;
+        }
 
         .btn-primary {
-            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            background: var(--gradient);
             color: white;
-            border: none;
             box-shadow: var(--shadow-md);
         }
 
         .btn-primary:hover {
             transform: translateY(-3px);
             box-shadow: var(--shadow-lg);
+            color: white;
         }
 
         .btn-outline {
@@ -165,9 +237,9 @@
         }
 
         .btn-outline:hover {
-            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            background: var(--gradient);
             color: white;
-            border: transparent;
+            border-color: transparent;
         }
 
         /* Header & Navigation */
@@ -177,8 +249,8 @@
             left: 0;
             right: 0;
             z-index: 1000;
-            background: rgba(255, 255, 255, 0.795);
-            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(15px);
             padding: 0.8rem 0;
             transition: var(--transition);
             box-shadow: var(--shadow-sm);
@@ -188,7 +260,6 @@
             justify-content: center;
             width: 85%;
             margin: 0 auto;
-            clip-path: polygon(3% 0, 97% 0, 100% 100%, 0 100%);
         }
 
         .header.scrolled {
@@ -196,7 +267,7 @@
             top: 15px;
             width: 92%;
             box-shadow: var(--shadow-md);
-            background-color: rgba(255, 255, 255, 0.829);
+            background-color: rgba(255, 255, 255, 0.95);
         }
 
         .nav-container {
@@ -208,7 +279,8 @@
         }
 
         .Logo {
-            height: 50px;
+            height: 45px;
+            margin-left: 20%;
             width: auto;
             transition: var(--transition);
         }
@@ -289,7 +361,7 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.356)), url('assets/img/bg.png') center/cover no-repeat;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url('assets/img/bg.png') center/cover no-repeat;
             background-attachment: fixed;
             color: white;
             position: relative;
@@ -304,6 +376,8 @@
             left: 0;
             width: 100%;
             height: 100%;
+            background: radial-gradient(circle at 20% 80%, rgba(212, 175, 55, 0.2) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 20%, rgba(26, 31, 54, 0.3) 0%, transparent 50%);
         }
 
         .hero-content {
@@ -319,6 +393,9 @@
             text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
             font-weight: 800;
             letter-spacing: -0.03em;
+            background: linear-gradient(to right, #fff, var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
         .hero-subtitle {
@@ -442,7 +519,6 @@
             background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
             position: relative;
             overflow: hidden;
-            margin-top: 50px;
         }
 
         .about::before {
@@ -452,7 +528,7 @@
             right: -100px;
             width: 300px;
             height: 300px;
-            background: linear-gradient(135deg, var(--secondary) 0%, var(--accent) 100%);
+            background: var(--gradient);
             opacity: 0.03;
             border-radius: 50%;
             z-index: 0;
@@ -465,7 +541,7 @@
             left: -100px;
             width: 400px;
             height: 400px;
-            background: linear-gradient(135deg, var(--secondary) 0%, var(--accent) 100%);
+            background: var(--gradient);
             opacity: 0.03;
             border-radius: 50%;
             z-index: 0;
@@ -481,21 +557,18 @@
         }
 
         .image-container {
-            position: absolute;
-            top: 0;
-            right: 0;
-            left: 0;
+            position: relative;
             width: 430px;
             height: 430px;
             border-radius: 20px;
             overflow: hidden;
             box-shadow: var(--shadow-lg);
             transition: var(--transition);
-            background: linear-gradient(45deg, var(--secondary), var(--accent));
+            background: var(--gradient-gold);
         }
 
         .image-container:hover {
-            transform: translateY(-5px);
+            transform: translateY(-10px) rotate(2deg);
             box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
         }
 
@@ -507,7 +580,7 @@
         }
 
         .image-container:hover img {
-            transform: scale(1.03);
+            transform: scale(1.05);
         }
 
         .image-border {
@@ -539,7 +612,7 @@
             left: 0;
             width: 60px;
             height: 4px;
-            background: linear-gradient(to right, var(--secondary), var(--accent));
+            background: var(--gradient-gold);
             border-radius: 2px;
         }
 
@@ -589,20 +662,20 @@
 
         .detail-item:hover {
             background: rgba(255, 255, 255, 0.95);
-            transform: translateY(-3px);
+            transform: translateY(-5px);
             box-shadow: var(--shadow-md);
         }
 
         .detail-icon {
             width: 50px;
             height: 50px;
-            background: linear-gradient(180deg, rgba(173, 134, 4, 0.247) 70%, var(--accent) 100%);
+            background: var(--gradient-gold);
             border-radius: 12px;
             display: flex;
             align-items: center;
             justify-content: center;
             margin-right: 18px;
-            color: rgb(0, 0, 0);
+            color: white;
             font-size: 1.2rem;
             flex-shrink: 0;
         }
@@ -639,7 +712,7 @@
             left: 0;
             width: 50px;
             height: 3px;
-            background: linear-gradient(to right, var(--secondary), var(--accent));
+            background: var(--gradient-gold);
             border-radius: 2px;
         }
 
@@ -650,25 +723,25 @@
         }
 
         .skill-tag {
-            background: rgba(173, 134, 4, 0.247);
+            background: rgba(212, 175, 55, 0.1);
             color: var(--secondary);
             padding: 10px 22px;
             border-radius: 50px;
             font-weight: 500;
             transition: var(--transition);
-            border: 1px solid rgba(52, 152, 219, 0.15);
+            border: 1px solid rgba(212, 175, 55, 0.2);
             font-size: 0.95rem;
         }
 
         .skill-tag:hover {
             transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(52, 152, 219, 0.2);
+            background: rgba(212, 175, 55, 0.2);
+            box-shadow: 0 10px 20px rgba(212, 175, 55, 0.2);
         }
 
         /* Services Section */
         .services {
             background: var(--light);
-            margin-top: 50px;
         }
 
         .services-grid {
@@ -679,8 +752,7 @@
         }
 
         .service-card {
-            background: rgba(245, 222, 179, 0.555);
-
+            background: white;
             padding: 3rem 2.5rem;
             border-radius: 12px;
             text-align: center;
@@ -688,6 +760,7 @@
             position: relative;
             overflow: hidden;
             border: 1px solid rgba(0, 0, 0, 0.03);
+            box-shadow: var(--shadow-sm);
         }
 
         .service-card::before {
@@ -697,11 +770,8 @@
             left: 0;
             width: 5px;
             height: 0;
-            background: var(--gold);
-            z-index: -1;
+            background: var(--gradient-gold);
             transition: var(--transition);
-
-
         }
 
         .service-card:hover::before {
@@ -746,8 +816,7 @@
 
         /* Pricing Section */
         .pricing {
-
-            margin-top: 50px;
+            background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
         }
 
         .pricing-grid {
@@ -787,7 +856,7 @@
             position: absolute;
             top: 35px;
             right: -40px;
-            background: var(--gold);
+            background: var(--gradient-gold);
             color: white;
             padding: 5px 35px;
             font-size: 0.8rem;
@@ -852,7 +921,7 @@
             display: block;
             text-align: center;
             padding: 14px 0;
-            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            background: var(--gradient);
             color: white;
             border-radius: 6px;
             font-weight: 600;
@@ -863,7 +932,7 @@
         }
 
         .btn-pricing:hover {
-            background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 100%);
+            background: var(--gradient-gold);
             transform: translateY(-3px);
             box-shadow: var(--shadow-md);
         }
@@ -871,26 +940,23 @@
         /* Contact Section */
         .contact {
             background: var(--light);
-            margin-top: 80px;
         }
 
         .contact-content {
             display: grid;
             grid-template-columns: 1fr 2.5fr;
             gap: 5rem;
-
         }
 
         .contact-info {
             display: flex;
             flex-direction: column;
             gap: 2.5rem;
-            align-items: flex-end;
         }
 
         .contact-item {
             display: flex;
-            align-items: flex-end;
+            align-items: flex-start;
             gap: 1.5rem;
             width: 100%;
         }
@@ -899,16 +965,19 @@
             transition: var(--transition);
             display: flex;
             justify-content: center;
-            content: center;
+            align-items: center;
             border-radius: 10px;
-            padding: 20px;
-            width: 20px;
-            height: 20px;
+            padding: 15px;
+            width: 50px;
+            height: 50px;
+            background: rgba(212, 175, 55, 0.1);
+            color: var(--shadow-lg);
         }
 
         .contact-item:hover .contact-icon {
-            background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 100%);
-            transform: scale(1.1) rotate(5deg);
+            background: var(--primary);
+            color: white;
+            transform: scale(1.1) rotate(-2deg);
         }
 
         .contact-details h4 {
@@ -942,7 +1011,7 @@
         }
 
         .social-link:hover {
-            background: var(--primary);
+            background: var(--gradient);
             color: white;
             transform: translateY(-5px);
         }
@@ -951,12 +1020,11 @@
             background: white;
             padding: 3rem;
             border-radius: 12px;
-            box-shadow: 10px 8px 58px rgba(0, 0, 0, 0.15);
+            box-shadow: var(--shadow-lg);
         }
 
         .form-group {
             margin-bottom: 1.5rem;
-
         }
 
         .form-group label {
@@ -972,7 +1040,7 @@
             width: 100%;
             padding: 16px;
             background: #f9f9f9;
-            border: 1px solid #000000;
+            border: 1px solid #e2e8f0;
             border-radius: 6px;
             color: var(--text);
             font-family: inherit;
@@ -983,8 +1051,10 @@
         .form-group input:focus,
         .form-group textarea:focus,
         .form-group select:focus {
-            border-color: 6px solid rgb(0, 0, 0);
+            border-color: var(--gold);
             background: white;
+            box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+            outline: none;
         }
 
         .form-group textarea {
@@ -995,7 +1065,7 @@
         .contact-form button {
             width: 100%;
             padding: 16px;
-            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            background: var(--gradient);
             color: white;
             border: none;
             border-radius: 6px;
@@ -1006,7 +1076,7 @@
         }
 
         .contact-form button:hover {
-            background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 100%);
+            background: var(--gradient-gold);
             transform: translateY(-3px);
             box-shadow: var(--shadow-md);
         }
@@ -1016,12 +1086,8 @@
             background: var(--dark);
             color: white;
             padding: 40px 0 20px;
-            width: 99.5%;
-            border-radius: 12px;
-            margin: 0 auto;
+            width: 100%;
             margin-top: 50px;
-            margin-bottom: 10px;
-
         }
 
         .footer-content {
@@ -1061,15 +1127,13 @@
             text-align: right;
         }
 
-        .contact-item {
+        .footer-contact-item {
             display: flex;
             align-items: center;
             justify-content: flex-end;
             gap: 0.5rem;
             font-size: 0.85rem;
         }
-
-
 
         .footer-divider {
             height: 1px;
@@ -1094,7 +1158,7 @@
             gap: 0.8rem;
         }
 
-        .social-link {
+        .footer-social .social-link {
             width: 32px;
             height: 32px;
             border: 1px solid rgba(255, 255, 255, 0.2);
@@ -1107,37 +1171,26 @@
             font-size: 0.9rem;
         }
 
-        .social-link:hover {
+        .footer-social .social-link:hover {
             background: rgba(255, 255, 255, 0.925);
             color: var(--primary);
             transform: translateY(-2px);
         }
 
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .footer-content {
-                flex-direction: column;
-                gap: 1.5rem;
-                text-align: center;
-            }
+        /* Skip to main content for accessibility */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--primary);
+            color: white;
+            padding: 8px;
+            z-index: 1001;
+            text-decoration: none;
+        }
 
-            .footer-brand {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .footer-contact {
-                text-align: center;
-            }
-
-            .contact-item {
-                justify-content: center;
-            }
-
-            .footer-bottom {
-                flex-direction: column;
-                gap: 1rem;
-            }
+        .skip-link:focus {
+            top: 0;
         }
 
         /* Responsive Design */
@@ -1168,10 +1221,6 @@
 
             .hero-title {
                 font-size: 3.5rem;
-            }
-
-            .footer-content {
-                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             }
 
             .section {
@@ -1237,23 +1286,33 @@
                 padding: 2rem;
             }
 
-            .newsletter-form {
-                flex-direction: column;
-            }
-
-            .newsletter-form input {
-                border-radius: 4px;
-                margin-bottom: 10px;
-            }
-
-            .newsletter-form button {
-                border-radius: 4px;
-                padding: 12px;
-            }
-
             .image-container {
                 width: 300px;
                 height: 300px;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                gap: 1.5rem;
+                text-align: center;
+            }
+
+            .footer-brand {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer-contact {
+                text-align: center;
+            }
+
+            .footer-contact-item {
+                justify-content: center;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                gap: 1rem;
             }
         }
 
@@ -1291,40 +1350,41 @@
             .nav-container {
                 padding: 0 1.5rem;
             }
-
-            .footer {
-                padding: 80px 0 30px;
-            }
         }
     </style>
 </head>
 
 <body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <!-- Header & Navigation -->
     <header class="header" id="header">
         <div class="container nav-container">
-            <a href="index.html"><img src="assets/img/yklogo.png" alt="Logo" class="Logo"></a>
+            <a href="index.html" aria-label="Home"><img src="assets/img/yklogo.png" alt="Yonatan Kassahun Logo" class="Logo"></a>
 
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#services" class="nav-link">Services</a></li>
-                <li><a href="#pricing" class="nav-link">Pricing</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
+            <nav aria-label="Main navigation">
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#pricing" class="nav-link">Pricing</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
 
-            <div class="hamburger">
+            <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
-            </div>
+            </button>
         </div>
     </header>
 
     <!-- Enhanced Hero Section -->
     <section id="home" class="hero">
         <div class="container hero-content">
-            <h1 class="hero-title">YONATAN KASSAHUN.</h1>
+            <h1 class="hero-title">YONATAN KASSAHUN</h1>
             <p class="hero-subtitle">Crafting <span class="typed-text"></span><span class="cursor">&nbsp;</span>
                 Websites</p>
             <div class="hero-buttons">
@@ -1339,313 +1399,321 @@
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="section about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <p class="section-description">A dedicated UI/UX designer and developer passionate about creating
-                exceptional digital experiences</p>
+    <main id="main-content">
+        <!-- About Section -->
+        <section id="about" class="section about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-description">A dedicated UI/UX designer and developer passionate about creating
+                    exceptional digital experiences</p>
 
-            <div class="about-content">
-                <div class="about-image">
-                    <div class="image-container">
-                        <img src="assets/img/a.jpg" alt="Yonatan Kassahun - UI/UX Designer & Web Developer">
-                        <div class="image-border"></div>
+                <div class="about-content">
+                    <div class="about-image">
+                        <div class="image-container">
+                            <img src="assets/img/a.jpg" alt="Yonatan Kassahun - UI/UX Designer & Web Developer">
+                            <div class="image-border"></div>
+                        </div>
+                    </div>
+
+                    <div class="about-text">
+                        <h3>Designing Experiences That Make an Impact</h3>
+                        <p>I'm a <span class="highlight">UI/UX designer and full-stack developer</span> located in Addis
+                            Ababa, Ethiopia. I specialize in creating digital experiences that combine beautiful design with
+                            great functionality.</p>
+
+                        <p>With skills in both design and development, I look at projects from a complete viewpoint. This
+                            way, I ensure that every part—from the user interface to the underlying code—works well together
+                            to produce outstanding results.</p>
+
+                        <div class="about-details">
+                            <div class="detail-item">
+                                <div class="detail-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="detail-content">
+                                    <strong>Location</strong>
+                                    <span>Addis Ababa, Ethiopia</span>
+                                </div>
+                            </div>
+
+                            <div class="detail-item">
+                                <div class="detail-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="detail-content">
+                                    <strong>Email</strong>
+                                    <span>yonsbreak7@gmail.com</span>
+                                </div>
+                            </div>
+
+                            <div class="detail-item">
+                                <div class="detail-icon">
+                                    <i class="fas fa-briefcase"></i>
+                                </div>
+                                <div class="detail-content">
+                                    <strong>Availability</strong>
+                                    <span>Freelance Projects</span>
+                                </div>
+                            </div>
+
+                            <div class="detail-item">
+                                <div class="detail-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="detail-content">
+                                    <strong>Response Time</strong>
+                                    <span>Within 24 Hours</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills-section">
+                            <h4>Core Expertise</h4>
+                            <div class="skills-list">
+                                <span class="skill-tag"><i class="fas fa-pencil-alt"></i> UI/UX Design</span>
+                                <span class="skill-tag"><i class="fas fa-code"></i> Web Development</span>
+                                <span class="skill-tag"><i class="fab fa-html5"></i> HTML/CSS</span>
+                                <span class="skill-tag"><i class="fab fa-js"></i> JavaScript</span>
+                                <span class="skill-tag"><i class="fas fa-mobile-alt"></i> Responsive Design</span>
+                                <span class="skill-tag"><i class="fas fa-tools"></i> Web Maintenance</span>
+                                <span class="skill-tag"><i class="fas fa-search"></i> SEO Optimization</span>
+                                <span class="skill-tag"><i class="fas fa-tasks"></i> Project Management</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="about-text">
-                    <h3>Designing Experiences That Make an Impact</h3>
-                    <p>I'm a <span class="highlight">UI/UX designer and full-stack developer</span> located in Addis
-                        Ababa, Ethiopia. I specialize in creating digital experiences that combine beautiful design with
-                        great functionality.</p>
+        <!-- Services Section -->
+        <section id="services" class="section services">
+            <div class="container">
+                <h2 class="section-title">My Services</h2>
+                <p class="section-description">Comprehensive web solutions to bring your digital vision to life</p>
 
-                    <p>With skills in both design and development, I look at projects from a complete viewpoint. This
-                        way, I ensure that every part—from the user interface to the underlying code—works well together
-                        to produce outstanding results.</p>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h4>Web Design & Development</h4>
+                        <p>Custom websites built with modern technologies, focusing on aesthetics, functionality, and user
+                            experience.</p>
+                    </div>
 
-                    <div class="about-details">
-                        <div class="detail-item">
-                            <div class="detail-icon">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h4>Responsive Development</h4>
+                        <p>Websites that work flawlessly on all devices, from desktops to smartphones, with adaptive
+                            layouts.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h4>Website Maintenance</h4>
+                        <p>Ongoing support, updates, and maintenance to keep your website secure and up-to-date.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h4>API Development</h4>
+                        <p>Building robust and scalable APIs to connect your applications and enhance functionality.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h4>SEO Optimization</h4>
+                        <p>Improve your website's visibility with search engine optimization techniques and best practices.
+                        </p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h4>UI/UX Design</h4>
+                        <p>User-centered design approach creating intuitive interfaces and engaging user experiences.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="section pricing">
+            <div class="container">
+                <h2 class="section-title">Pricing Plans</h2>
+                <p class="section-description">Empower Your Online Presence with Affordable Excellence!</p>
+
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h4>Basic Web</h4>
+                            <div class="price">18,000<span>Birr</span></div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> Static website</li>
+                            <li><i class="fas fa-check"></i> 30-day Full-time support</li>
+                            <li><i class="fas fa-check"></i> SSL certificate</li>
+                            <li><i class="fas fa-check"></i> One-time maintenance</li>
+                            <li><i class="fas fa-check"></i> Project guidance</li>
+                            <li><i class="fas fa-times"></i> Hosting & domain assistance</li>
+                            <li><i class="fas fa-times"></i> Database</li>
+                        </ul>
+                        <a href="#contact" class="btn-pricing" data-package="Basic Web">Order Now</a>
+                    </div>
+
+                    <div class="pricing-card featured">
+                        <div class="popular-badge">RECOMMENDED</div>
+                        <div class="pricing-header">
+                            <h4>ProSite Plus</h4>
+                            <div class="price">25,000<span>Birr</span></div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> Dynamic website</li>
+                            <li><i class="fas fa-check"></i> 60-day Full-time support</li>
+                            <li><i class="fas fa-check"></i> SSL certificate</li>
+                            <li><i class="fas fa-check"></i> Monthly maintenance</li>
+                            <li><i class="fas fa-check"></i> Project guidance</li>
+                            <li><i class="fas fa-check"></i> Hosting & domain assistance</li>
+                            <li><i class="fas fa-check"></i> Database Included</li>
+                        </ul>
+                        <a href="#contact" class="btn-pricing" data-package="ProSite Plus">Order Now</a>
+                    </div>
+
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h4>Premium Web <i class="fas fa-crown"></i></h4>
+                            <div class="price">45,000<span>Birr</span></div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> Dynamic & highly appealing website</li>
+                            <li><i class="fas fa-check"></i> Lifetime support</li>
+                            <li><i class="fas fa-check"></i> SSL certificate</li>
+                            <li><i class="fas fa-check"></i> 24/7 Maintenance</li>
+                            <li><i class="fas fa-check"></i> Database Integration</li>
+                            <li><i class="fas fa-check"></i> Expert project guidance</li>
+                            <li><i class="fas fa-check"></i> Hosting & domain assistance</li>
+                            <li><i class="fas fa-check"></i> Major Backups</li>
+                            <li><i class="fas fa-check"></i> Payment Integration</li>
+                            <li><i class="fas fa-check"></i> Admin Panel</li>
+                        </ul>
+                        <a href="#contact" class="btn-pricing" data-package="Premium Web">Order Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-description">Ready to start your project? Reach out to me today!</p>
+
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
                                 <i class="fas fa-map-marker-alt"></i>
                             </div>
-                            <div class="detail-content">
-                                <strong>Location</strong>
-                                <span>Addis Ababa, Ethiopia</span>
+                            <div class="contact-details">
+                                <h4>Location</h4>
+                                <p>Alembank, Addis Ababa, Ethiopia</p>
                             </div>
                         </div>
 
-                        <div class="detail-item">
-                            <div class="detail-icon">
+                        <div class="contact-item">
+                            <div class="contact-icon">
                                 <i class="fas fa-envelope"></i>
                             </div>
-                            <div class="detail-content">
-                                <strong>Email</strong>
-                                <span>yonsbreak7@gmail.com</span>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>yonsbreak7@gmail.com</p>
                             </div>
                         </div>
 
-                        <div class="detail-item">
-                            <div class="detail-icon">
-                                <i class="fas fa-briefcase"></i>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
                             </div>
-                            <div class="detail-content">
-                                <strong>Availability</strong>
-                                <span>Freelance Projects</span>
+                            <div class="contact-details">
+                                <h4>Call</h4>
+                                <p>+2519-67-28-56-00</p>
                             </div>
                         </div>
 
-                        <div class="detail-item">
-                            <div class="detail-icon">
-                                <i class="fas fa-clock"></i>
-                            </div>
-                            <div class="detail-content">
-                                <strong>Response Time</strong>
-                                <span>Within 24 Hours</span>
-                            </div>
+                        <div class="social-links">
+                            <a href="https://t.me/Yoni_K" class="social-link" aria-label="Telegram">
+                                <i class="fab fa-telegram"></i>
+                            </a>
+                            <a href="https://www.facebook.com/profile.php?id=100006299029078" class="social-link" aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.instagram.com/yoninani7/" class="social-link" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://wa.me/qr/DAASMBETWYIHJ1" class="social-link" aria-label="WhatsApp">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
                         </div>
                     </div>
 
-                    <div class="skills-section">
-                        <h4>Core Expertise</h4>
-                        <div class="skills-list">
-                            <span class="skill-tag"><i class="fas fa-pencil-alt"></i> UI/UX Design</span>
-                            <span class="skill-tag"><i class="fas fa-code"></i> Web Development</span>
-                            <span class="skill-tag"><i class="fab fa-html5"></i> HTML/CSS</span>
-                            <span class="skill-tag"><i class="fab fa-js"></i> JavaScript</span>
-                            <span class="skill-tag"><i class="fas fa-mobile-alt"></i> Responsive Design</span>
-                            <span class="skill-tag"><i class="fas fa-tools"></i> Web Maintenance</span>
-                            <span class="skill-tag"><i class="fas fa-search"></i> SEO Optimization</span>
-                            <span class="skill-tag"><i class="fas fa-tasks"></i> Project Management</span>
-                        </div>
+                    <div class="contact-form">
+                        <form action="https://formspree.io/f/mayggdqa" method="POST" id="projectForm">
+                            <input type="hidden" name="selected_package" id="selectedPackage">
+
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" name="name" id="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" name="email" id="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Your Phone</label>
+                                <input type="text" name="phone" id="phone" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="packageSelect">Select a Package</label>
+                                <select name="package" id="packageSelect" required>
+                                    <option value="">Choose an option</option>
+                                    <option value="Basic Web">Basic Web - 18,000 Birr</option>
+                                    <option value="ProSite Plus">ProSite Plus - 25,000 Birr</option>
+                                    <option value="Premium Web">Premium Web - 45,000 Birr</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Your Message</label>
+                                <textarea style="resize: none;" name="message" id="message" rows="5" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Services Section -->
-    <section id="services" class="section services">
-        <div class="container">
-            <h2 class="section-title">My Services</h2>
-            <p class="section-description">Comprehensive web solutions to bring your digital vision to life</p>
-
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-laptop-code"></i>
-                    </div>
-                    <h4>Web Design & Development</h4>
-                    <p>Custom websites built with modern technologies, focusing on aesthetics, functionality, and user
-                        experience.</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <h4>Responsive Development</h4>
-                    <p>Websites that work flawlessly on all devices, from desktops to smartphones, with adaptive
-                        layouts.</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-tools"></i>
-                    </div>
-                    <h4>Website Maintenance</h4>
-                    <p>Ongoing support, updates, and maintenance to keep your website secure and up-to-date.</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-cogs"></i>
-                    </div>
-                    <h4>API Development</h4>
-                    <p>Building robust and scalable APIs to connect your applications and enhance functionality.</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-search"></i>
-                    </div>
-                    <h4>SEO Optimization</h4>
-                    <p>Improve your website's visibility with search engine optimization techniques and best practices.
-                    </p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-paint-brush"></i>
-                    </div>
-                    <h4>UI/UX Design</h4>
-                    <p>User-centered design approach creating intuitive interfaces and engaging user experiences.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pricing Section -->
-    <section id="pricing" class="section pricing">
-        <div class="container">
-            <h2 class="section-title">Pricing Plans</h2>
-            <p class="section-description">Empower Your Online Presence with Affordable Excellence!</p>
-
-            <div class="pricing-grid">
-                <div class="pricing-card">
-                    <div class="pricing-header">
-                        <h4>Basic Web</h4>
-                        <div class="price">18,000<span>Birr</span></div>
-                    </div>
-                    <ul class="pricing-features">
-                        <li><i class="fas fa-check"></i> Static website</li>
-                        <li><i class="fas fa-check"></i> 30-day Full-time support</li>
-                        <li><i class="fas fa-check"></i> SSL certificate</li>
-                        <li><i class="fas fa-check"></i> One-time maintenance</li>
-                        <li><i class="fas fa-check"></i> Project guidance</li>
-                        <li><i class="fas fa-times"></i> Hosting & domain assistance</li>
-                        <li><i class="fas fa-times"></i> Database</li>
-                    </ul>
-                    <a href="#contact" class="btn-pricing" data-package="Basic Web">Order Now</a>
-                </div>
-
-                <div class="pricing-card featured">
-                    <div class="popular-badge">RECOMMENDED</div>
-                    <div class="pricing-header">
-                        <h4>ProSite Plus</h4>
-                        <div class="price">25,000<span>Birr</span></div>
-                    </div>
-                    <ul class="pricing-features">
-                        <li><i class="fas fa-check"></i> Dynamic website</li>
-                        <li><i class="fas fa-check"></i> 60-day Full-time support</li>
-                        <li><i class="fas fa-check"></i> SSL certificate</li>
-                        <li><i class="fas fa-check"></i> Monthly maintenance</li>
-                        <li><i class="fas fa-check"></i> Project guidance</li>
-                        <li><i class="fas fa-check"></i> Hosting & domain assistance</li>
-                        <li><i class="fas fa-check"></i> Database Included</li>
-                    </ul>
-                    <a href="#contact" class="btn-pricing" data-package="ProSite Plus">Order Now</a>
-                </div>
-
-                <div class="pricing-card">
-                    <div class="pricing-header">
-                        <h4>Premium Web <i class="fas fa-crown"></i></h4>
-                        <div class="price">45,000<span>Birr</span></div>
-                    </div>
-                    <ul class="pricing-features">
-                        <li><i class="fas fa-check"></i> Dynamic & highly appealing website</li>
-                        <li><i class="fas fa-check"></i> Lifetime support</li>
-                        <li><i class="fas fa-check"></i> SSL certificate</li>
-                        <li><i class="fas fa-check"></i> 24/7 Maintenance</li>
-                        <li><i class="fas fa-check"></i> Database Integration</li>
-                        <li><i class="fas fa-check"></i> Expert project guidance</li>
-                        <li><i class="fas fa-check"></i> Hosting & domain assistance</li>
-                        <li><i class="fas fa-check"></i> Major Backups</li>
-                        <li><i class="fas fa-check"></i> Payment Integration</li>
-                        <li><i class="fas fa-check"></i> Admin Panel</li>
-                    </ul>
-                    <a href="#contact" class="btn-pricing" data-package="Premium Web">Order Now</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="section-description">Ready to start your project? Reach out to me today!</p>
-
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt" style="font-size: 25px;"></i> &nbsp;&nbsp;&nbsp;
-                        <div class="contact-details">
-                            <h4>Location</h4>
-                            <p>Alembank, Addis Ababa, Ethiopia</p>
-                        </div>
-                    </div>
-
-                    <div class="contact-item">
-                        <i class="fas fa-envelope" style="font-size: 25px;  "></i> &nbsp;&nbsp;&nbsp;
-                        <div class="contact-details">
-
-                            <h4>Email</h4>
-                            <p>yonsbreak7@gmail.com</p>
-                        </div>
-                    </div>
-
-                    <div class="contact-item">
-
-                        <i class="fas fa-phone" style="font-size: 25px;  "></i> &nbsp;&nbsp;&nbsp;
-                        <div class="contact-details">
-                            <h4>Call</h4>
-                            <p>+2519-67-28-56-00</p>
-                        </div>
-                    </div>
-
-                    <div class="social-links">
-                        <a href="https://t.me/Yoni_K" class="social-link">
-                            <i class="fab fa-telegram"></i>
-                        </a>
-                        <a href="https://www.facebook.com/profile.php?id=100006299029078" class="social-link">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="https://www.instagram.com/yoninani7/" class="social-link">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://wa.me/qr/DAASMBETWYIHJ1" class="social-link">
-                            <i class="fab fa-whatsapp"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="contact-form">
-                    <form action="https://formspree.io/f/mayggdqa" method="POST" id="projectForm">
-                        <input type="hidden" name="selected_package" id="selectedPackage">
-
-                        <div class="form-group">
-                            <label for="name">Your Name</label>
-                            <input type="text" name="name" id="name" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="email">Your Email</label>
-                            <input type="email" name="email" id="email" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="phone">Your Phone</label>
-                            <input type="text" name="phone" id="phone" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="packageSelect">Select a Package</label>
-                            <select name="package" id="packageSelect" required>
-                                <option value="">Choose an option</option>
-                                <option value="Basic Web">Basic Web - 15,000 Birr</option>
-                                <option value="ProSite Plus">ProSite Plus - 20,000 Birr</option>
-                                <option value="Premium Web">Premium Web - 45,000 Birr</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="message">Your Message</label>
-                            <textarea style="resize: none;" name="message" id="message" rows="5" required></textarea>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Footer Section -->
     <footer class="compact-footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <a href="index.html">
-                        <img src="assets/img/yklogo.png" alt="Yonatan Kassahun" class="footer-logo">
+                    <a href="index.html" aria-label="Home">
+                        <img src="assets/img/yklogo.png" alt="Yonatan Kassahun Logo" class="footer-logo">
                     </a>
                     <div class="brand-text">
                         <div>Yonatan Kassahun</div>
@@ -1654,12 +1722,12 @@
                 </div>
 
                 <div class="footer-contact">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope  "></i>
-                        <span> yonsbreak7@gmail.com</span>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>yonsbreak7@gmail.com</span>
                     </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone  "></i>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-phone"></i>
                         <span>+2519-67-28-56-00</span>
                     </div>
                 </div>
@@ -1673,16 +1741,16 @@
                 </div>
 
                 <div class="footer-social">
-                    <a href="https://t.me/Yoni_K" class="social-link">
+                    <a href="https://t.me/Yoni_K" class="social-link" aria-label="Telegram">
                         <i class="fab fa-telegram"></i>
                     </a>
-                    <a href="https://www.facebook.com/profile.php?id=100006299029078" class="social-link">
+                    <a href="https://www.facebook.com/profile.php?id=100006299029078" class="social-link" aria-label="Facebook">
                         <i class="fab fa-facebook-f"></i>
                     </a>
-                    <a href="https://www.instagram.com/yoninani7/" class="social-link">
+                    <a href="https://www.instagram.com/yoninani7/" class="social-link" aria-label="Instagram">
                         <i class="fab fa-instagram"></i>
                     </a>
-                    <a href="https://wa.me/qr/DAASMBETWYIHJ1" class="social-link">
+                    <a href="https://wa.me/qr/DAASMBETWYIHJ1" class="social-link" aria-label="WhatsApp">
                         <i class="fab fa-whatsapp"></i>
                     </a>
                 </div>
@@ -1690,9 +1758,34 @@
         </div>
     </footer>
 
-    </div>
-
     <script>
+        // Enhanced smooth scrolling function
+        function smoothScrollTo(targetElement, duration = 1000) {
+            const targetPosition = targetElement.offsetTop - 100;
+            const startPosition = window.pageYOffset;
+            const distance = targetPosition - startPosition;
+            let startTime = null;
+
+            function animation(currentTime) {
+                if (startTime === null) startTime = currentTime;
+                const timeElapsed = currentTime - startTime;
+                const progress = Math.min(timeElapsed / duration, 1);
+                
+                // Easing function for smoother scrolling
+                const ease = progress < 0.5 
+                    ? 2 * progress * progress 
+                    : -1 + (4 - 2 * progress) * progress;
+
+                window.scrollTo(0, startPosition + distance * ease);
+
+                if (timeElapsed < duration) {
+                    requestAnimationFrame(animation);
+                }
+            }
+
+            requestAnimationFrame(animation);
+        }
+
         // Navigation functionality
         const header = document.getElementById('header');
         const hamburger = document.querySelector('.hamburger');
@@ -1702,6 +1795,7 @@
         function toggleMenu() {
             hamburger.classList.toggle('active');
             navMenu.classList.toggle('active');
+            hamburger.setAttribute('aria-expanded', hamburger.classList.contains('active'));
 
             // Prevent body scrolling when menu is open
             if (navMenu.classList.contains('active')) {
@@ -1716,9 +1810,18 @@
 
         // Close menu when clicking on links
         document.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', () => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = link.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    smoothScrollTo(targetElement);
+                }
+                
                 hamburger.classList.remove('active');
                 navMenu.classList.remove('active');
+                hamburger.setAttribute('aria-expanded', 'false');
                 document.body.style.overflow = 'auto';
             });
         });
@@ -1808,7 +1911,7 @@
             animateOnScroll(); // Initial check
         });
 
-        // Smooth scrolling for navigation links
+        // Enhanced smooth scrolling for all anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -1818,28 +1921,7 @@
 
                 const targetElement = document.querySelector(targetId);
                 if (targetElement) {
-                    const startPosition = window.pageYOffset;
-                    const targetPosition = targetElement.offsetTop - 100;
-                    const distance = targetPosition - startPosition;
-                    const duration = 1000;
-                    let startTime = null;
-
-                    function animation(currentTime) {
-                        if (startTime === null) startTime = currentTime;
-                        const timeElapsed = currentTime - startTime;
-                        const progress = Math.min(timeElapsed / duration, 1);
-
-                        // Ease in-out function
-                        const ease = progress < 0.5 ? 2 * progress * progress : -1 + (4 - 2 * progress) * progress;
-
-                        window.scrollTo(0, startPosition + distance * ease);
-
-                        if (timeElapsed < duration) {
-                            requestAnimationFrame(animation);
-                        }
-                    }
-
-                    requestAnimationFrame(animation);
+                    smoothScrollTo(targetElement);
                 }
             });
         });
@@ -1855,7 +1937,10 @@
                 document.getElementById('packageSelect').value = packageName;
 
                 // Scroll to the contact form
-                document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+                const contactSection = document.getElementById('contact');
+                if (contactSection) {
+                    smoothScrollTo(contactSection);
+                }
             });
         });
 
@@ -1872,7 +1957,11 @@
             }
             // If validation passes, submit the form
             this.submit();
+        });
 
+        // Add loading state for better UX
+        document.addEventListener('DOMContentLoaded', function() {
+            document.body.classList.add('loaded');
         });
     </script>
 </body>
