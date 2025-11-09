@@ -307,7 +307,7 @@ h6 {
   color: #45505b;
   margin: 15px 0 0 0;
   font-size: 26px;
-  
+
 }
 
 #hero p span {
@@ -345,7 +345,7 @@ h6 {
   #hero p {
     margin-top: 10px;
     font-size: 20px;
-    line-height: 24px; 
+    line-height: 24px;
   }
 }
 
@@ -402,22 +402,22 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
-.about .content h3 { 
+.about .content h3 {
   font-size: 20px;
-  color: #728394; 
+  color: #728394;
 }
 
 .about .content ul {
   list-style: none;
-  padding: 0; 
+  padding: 0;
   font-size: 17px;
 }
 
 .about .content ul li {
   margin-bottom: 20px;
-  display: flex; 
-  
-  
+  display: flex;
+
+
 }
 
 .about .content ul strong {
@@ -473,7 +473,7 @@ section {
 
 .facts .count-box p {
   padding: 0;
-  margin: 0; 
+  margin: 0;
   font-size: 14px;
   font-family: "Roboto", sans-serif;
 }
@@ -493,7 +493,7 @@ section {
   margin: 0;
   text-transform: uppercase;
   display: block;
-  font-weight: 600; 
+  font-weight: 600;
   color: #45505b;
 }
 
@@ -850,7 +850,7 @@ section {
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
-  
+
 }
 
 .services .icon-box:hover {
@@ -1211,11 +1211,12 @@ section {
 #footer .credits {
   font-size: 13px;
 }
- 
-  
+
+
 .no-resize {
   resize: none;
 }
+
 .my-3 {
   margin-top: 3rem;
 }
@@ -1274,8 +1275,9 @@ button[type="submit"]:hover {
 
 .website-developer p {
   margin-bottom: 15px;
-  line-height: 1.5;  
+  line-height: 1.5;
 }
+
 .ev-icon-box {
   background-color: #fff;
   border-radius: 10px;
@@ -1323,11 +1325,11 @@ button[type="submit"]:hover {
   border-radius: 10px;
   background-color: #fff;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-   
+
   text-align: center;
   transition: transform 0.3s ease-in-out;
   margin: 0px 0px;
-  margin-right:10px;
+  margin-right: 10px;
 }
 
 .ev-card-center {
@@ -1458,7 +1460,7 @@ button[type="submit"]:hover {
   background-color: #007bff;
   color: #fff;
   font-size: 20px;
-  font-weight: bold; 
+  font-weight: bold;
   text-align: center;
 }
 
@@ -1467,5 +1469,5 @@ button[type="submit"]:hover {
     flex-basis: 100%;
   }
 
-
-@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+}
+  @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
