@@ -4,20 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yonatan Kassahun | UI/UX Designer & Web Developer | Addis Ababa</title>
+    <title>Yonatan Kassahun | UI/UX Designer & Web Developer | Addis Ababa, Ethiopia</title>
     <meta name="description" content="Professional UI/UX Designer and Web Developer in Addis Ababa, Ethiopia. Specializing in responsive web design, development, and digital solutions. Get custom websites starting from 18,000 Birr.">
-    <meta name="keywords" content="yonatan, web developer, Addis Ababa, Ethiopia, website design, web development, responsive design, SEO optimization,yonatan ethiopia">
+    <meta name="keywords" content="yonatan kassahun, web developer, ui ux designer, addis ababa, ethiopia, website design, web development, responsive design, seo optimization, freelance web developer">
     <meta name="author" content="Yonatan Kassahun">
+    <meta name="robots" content="index, follow">
     
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Yonatan Kassahun | UI/UX Designer & Web Developer">
     <meta property="og:description" content="Professional UI/UX Designer and Web Developer in Addis Ababa, Ethiopia. Creating engaging digital experiences.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://yourwebsite.com">
+    <meta property="og:image" content="https://yourwebsite.com/assets/img/a.jpg">
+    <meta property="og:locale" content="en_US">
     
     <!-- Canonical URL -->
     <link rel="canonical" href="https://yourwebsite.com">
     
+    <!-- Preload critical resources -->
+    <link rel="preload" href="assets/img/bg.png" as="image">
+    <link rel="preload" href="assets/img/a.jpg" as="image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <!-- Structured Data -->
     <script type="application/ld+json">
     {
@@ -142,7 +151,7 @@
         }
 
         .section {
-            padding: 100px 0;
+            padding: 50px 0;
         }
 
         .section-title {
@@ -201,6 +210,7 @@
             overflow: hidden;
             z-index: 1;
             border: none;
+            min-height: 44px; /* Accessibility requirement */
         }
 
         .btn::before {
@@ -260,6 +270,7 @@
             justify-content: center;
             width: 85%;
             margin: 0 auto;
+            will-change: transform;
         }
 
         .header.scrolled {
@@ -303,6 +314,7 @@
             text-transform: uppercase;
             font-size: 0.95rem;
             letter-spacing: 0.5px;
+            padding: 8px 0; /* For better touch targets */
         }
 
         .nav-link::after {
@@ -331,6 +343,9 @@
             width: 30px;
             height: 24px;
             justify-content: space-between;
+            background: transparent;
+            border: none;
+            padding: 0;
         }
 
         .bar {
@@ -367,6 +382,7 @@
             position: relative;
             overflow: hidden;
             padding-top: 80px;
+            transform: translateZ(0);
         }
 
         .hero::before {
@@ -553,7 +569,7 @@
             gap: 5rem;
             position: relative;
             z-index: 1;
-            align-items: center;
+            align-items: start;
         }
 
         .image-container {
@@ -565,6 +581,10 @@
             box-shadow: var(--shadow-lg);
             transition: var(--transition);
             background: var(--gradient-gold);
+            margin-top: -40px;
+            transform: translateZ(0);
+            backface-visibility: hidden;
+            perspective: 1000px;
         }
 
         .image-container:hover {
@@ -596,7 +616,7 @@
             opacity: 0.3;
         }
 
-        .about-text h3 {
+        .about-text h2 {
             font-size: 2.2rem;
             margin-bottom: 1.8rem;
             color: var(--dark);
@@ -605,7 +625,7 @@
             font-weight: 700;
         }
 
-        .about-text h3::after {
+        .about-text h2::after {
             content: '';
             position: absolute;
             bottom: -12px;
@@ -658,6 +678,9 @@
             transition: var(--transition);
             box-shadow: var(--shadow-sm);
             border: 1px solid rgba(0, 0, 0, 0.05);
+            transform: translateZ(0);
+            backface-visibility: hidden;
+            perspective: 1000px;
         }
 
         .detail-item:hover {
@@ -696,7 +719,7 @@
             margin-top: 3rem;
         }
 
-        .skills-section h4 {
+        .skills-section h3 {
             font-size: 1.6rem;
             margin-bottom: 1.8rem;
             color: var(--dark);
@@ -705,7 +728,7 @@
             font-weight: 600;
         }
 
-        .skills-section h4::after {
+        .skills-section h3::after {
             content: '';
             position: absolute;
             bottom: -10px;
@@ -761,6 +784,9 @@
             overflow: hidden;
             border: 1px solid rgba(0, 0, 0, 0.03);
             box-shadow: var(--shadow-sm);
+            transform: translateZ(0);
+            backface-visibility: hidden;
+            perspective: 1000px;
         }
 
         .service-card::before {
@@ -801,7 +827,7 @@
             transform: rotateY(180deg);
         }
 
-        .service-card h4 {
+        .service-card h3 {
             font-size: 1.5rem;
             margin-bottom: 1rem;
             color: var(--dark);
@@ -836,6 +862,9 @@
             overflow: hidden;
             z-index: 1;
             border: 1px solid rgba(0, 0, 0, 0.05);
+            transform: translateZ(0);
+            backface-visibility: hidden;
+            perspective: 1000px;
         }
 
         .pricing-card:hover {
@@ -871,7 +900,7 @@
             border-bottom: 1px solid #eee;
         }
 
-        .pricing-header h4 {
+        .pricing-header h3 {
             font-size: 1.5rem;
             margin-bottom: 1rem;
             color: var(--dark);
@@ -929,6 +958,7 @@
             cursor: pointer;
             border: none;
             font-size: 1rem;
+            min-height: 44px; /* Accessibility requirement */
         }
 
         .btn-pricing:hover {
@@ -980,7 +1010,7 @@
             transform: scale(1.1) rotate(-2deg);
         }
 
-        .contact-details h4 {
+        .contact-details h3 {
             font-size: 1.2rem;
             margin-bottom: 0.5rem;
             color: var(--dark);
@@ -1073,6 +1103,7 @@
             font-size: 1rem;
             cursor: pointer;
             transition: var(--transition);
+            min-height: 44px; /* Accessibility requirement */
         }
 
         .contact-form button:hover {
@@ -1193,6 +1224,16 @@
             top: 0;
         }
 
+        /* Reduce animation complexity on mobile */
+        @media (max-width: 768px) {
+            .service-card:hover,
+            .pricing-card:hover,
+            .detail-item:hover,
+            .image-container:hover {
+                transform: none !important;
+            }
+        }
+
         /* Responsive Design */
         @media (max-width: 1200px) {
             .about-content {
@@ -1289,6 +1330,7 @@
             .image-container {
                 width: 300px;
                 height: 300px;
+                margin-top: 0;
             }
 
             .footer-content {
@@ -1359,7 +1401,7 @@
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <!-- Header & Navigation -->
-    <header class="header" id="header">
+    <header class="header" id="header" role="banner">
         <div class="container nav-container">
             <a href="index.html" aria-label="Home"><img src="assets/img/yklogo.png" alt="Yonatan Kassahun Logo" class="Logo"></a>
 
@@ -1382,10 +1424,10 @@
     </header>
 
     <!-- Enhanced Hero Section -->
-    <section id="home" class="hero">
+    <section id="home" class="hero" role="banner">
         <div class="container hero-content">
             <h1 class="hero-title">YONATAN KASSAHUN</h1>
-            <p class="hero-subtitle">Crafting <span class="typed-text"></span><span class="cursor">&nbsp;</span>
+            <p class="hero-subtitle">Crafting <span class="typed-text"></span><span class="cursor" aria-hidden="true">&nbsp;</span>
                 Websites</p>
             <div class="hero-buttons">
                 <a href="#contact" class="btn btn-primary">Start a Project</a>
@@ -1395,11 +1437,11 @@
 
         <div class="scroll-indicator">
             <a href="#about"> <span>Explore More</span><br>
-                <i class="fas fa-chevron-down"></i></a>
+                <i class="fas fa-chevron-down" aria-hidden="true"></i></a>
         </div>
     </section>
 
-    <main id="main-content">
+    <main id="main-content" role="main">
         <!-- About Section -->
         <section id="about" class="section about">
             <div class="container">
@@ -1408,15 +1450,15 @@
                     exceptional digital experiences</p>
 
                 <div class="about-content">
-                    <div class="about-image">
+                    <div class="about-image" style="margin-top: 120px;">
                         <div class="image-container">
-                            <img src="assets/img/a.jpg" alt="Yonatan Kassahun - UI/UX Designer & Web Developer">
-                            <div class="image-border"></div>
+                            <img src="assets/img/a.jpg" alt="Yonatan Kassahun - UI/UX Designer & Web Developer" loading="lazy">
+                            <div class="image-border" aria-hidden="true"></div>
                         </div>
                     </div>
 
                     <div class="about-text">
-                        <h3>Designing Experiences That Make an Impact</h3>
+                        <h2>Designing Experiences That Make an Impact</h2>
                         <p>I'm a <span class="highlight">UI/UX designer and full-stack developer</span> located in Addis
                             Ababa, Ethiopia. I specialize in creating digital experiences that combine beautiful design with
                             great functionality.</p>
@@ -1427,7 +1469,7 @@
 
                         <div class="about-details">
                             <div class="detail-item">
-                                <div class="detail-icon">
+                                <div class="detail-icon" aria-hidden="true">
                                     <i class="fas fa-map-marker-alt"></i>
                                 </div>
                                 <div class="detail-content">
@@ -1437,7 +1479,7 @@
                             </div>
 
                             <div class="detail-item">
-                                <div class="detail-icon">
+                                <div class="detail-icon" aria-hidden="true">
                                     <i class="fas fa-envelope"></i>
                                 </div>
                                 <div class="detail-content">
@@ -1447,7 +1489,7 @@
                             </div>
 
                             <div class="detail-item">
-                                <div class="detail-icon">
+                                <div class="detail-icon" aria-hidden="true">
                                     <i class="fas fa-briefcase"></i>
                                 </div>
                                 <div class="detail-content">
@@ -1457,7 +1499,7 @@
                             </div>
 
                             <div class="detail-item">
-                                <div class="detail-icon">
+                                <div class="detail-icon" aria-hidden="true">
                                     <i class="fas fa-clock"></i>
                                 </div>
                                 <div class="detail-content">
@@ -1468,16 +1510,16 @@
                         </div>
 
                         <div class="skills-section">
-                            <h4>Core Expertise</h4>
+                            <h3>Core Expertise</h3>
                             <div class="skills-list">
-                                <span class="skill-tag"><i class="fas fa-pencil-alt"></i> UI/UX Design</span>
-                                <span class="skill-tag"><i class="fas fa-code"></i> Web Development</span>
-                                <span class="skill-tag"><i class="fab fa-html5"></i> HTML/CSS</span>
-                                <span class="skill-tag"><i class="fab fa-js"></i> JavaScript</span>
-                                <span class="skill-tag"><i class="fas fa-mobile-alt"></i> Responsive Design</span>
-                                <span class="skill-tag"><i class="fas fa-tools"></i> Web Maintenance</span>
-                                <span class="skill-tag"><i class="fas fa-search"></i> SEO Optimization</span>
-                                <span class="skill-tag"><i class="fas fa-tasks"></i> Project Management</span>
+                                <span class="skill-tag"><i class="fas fa-pencil-alt" aria-hidden="true"></i> UI/UX Design</span>
+                                <span class="skill-tag"><i class="fas fa-code" aria-hidden="true"></i> Web Development</span>
+                                <span class="skill-tag"><i class="fab fa-html5" aria-hidden="true"></i> HTML/CSS</span>
+                                <span class="skill-tag"><i class="fab fa-js" aria-hidden="true"></i> JavaScript</span>
+                                <span class="skill-tag"><i class="fas fa-mobile-alt" aria-hidden="true"></i> Responsive Design</span>
+                                <span class="skill-tag"><i class="fas fa-tools" aria-hidden="true"></i> Web Maintenance</span>
+                                <span class="skill-tag"><i class="fas fa-search" aria-hidden="true"></i> SEO Optimization</span>
+                                <span class="skill-tag"><i class="fas fa-tasks" aria-hidden="true"></i> Project Management</span>
                             </div>
                         </div>
                     </div>
@@ -1493,53 +1535,53 @@
 
                 <div class="services-grid">
                     <div class="service-card">
-                        <div class="service-icon">
+                        <div class="service-icon" aria-hidden="true">
                             <i class="fas fa-laptop-code"></i>
                         </div>
-                        <h4>Web Design & Development</h4>
+                        <h3>Web Design & Development</h3>
                         <p>Custom websites built with modern technologies, focusing on aesthetics, functionality, and user
                             experience.</p>
                     </div>
 
                     <div class="service-card">
-                        <div class="service-icon">
+                        <div class="service-icon" aria-hidden="true">
                             <i class="fas fa-mobile-alt"></i>
                         </div>
-                        <h4>Responsive Development</h4>
+                        <h3>Responsive Development</h3>
                         <p>Websites that work flawlessly on all devices, from desktops to smartphones, with adaptive
                             layouts.</p>
                     </div>
 
                     <div class="service-card">
-                        <div class="service-icon">
+                        <div class="service-icon" aria-hidden="true">
                             <i class="fas fa-tools"></i>
                         </div>
-                        <h4>Website Maintenance</h4>
+                        <h3>Website Maintenance</h3>
                         <p>Ongoing support, updates, and maintenance to keep your website secure and up-to-date.</p>
                     </div>
 
                     <div class="service-card">
-                        <div class="service-icon">
+                        <div class="service-icon" aria-hidden="true">
                             <i class="fas fa-cogs"></i>
                         </div>
-                        <h4>API Development</h4>
+                        <h3>API Development</h3>
                         <p>Building robust and scalable APIs to connect your applications and enhance functionality.</p>
                     </div>
 
                     <div class="service-card">
-                        <div class="service-icon">
+                        <div class="service-icon" aria-hidden="true">
                             <i class="fas fa-search"></i>
                         </div>
-                        <h4>SEO Optimization</h4>
+                        <h3>SEO Optimization</h3>
                         <p>Improve your website's visibility with search engine optimization techniques and best practices.
                         </p>
                     </div>
 
                     <div class="service-card">
-                        <div class="service-icon">
+                        <div class="service-icon" aria-hidden="true">
                             <i class="fas fa-paint-brush"></i>
                         </div>
-                        <h4>UI/UX Design</h4>
+                        <h3>UI/UX Design</h3>
                         <p>User-centered design approach creating intuitive interfaces and engaging user experiences.</p>
                     </div>
                 </div>
@@ -1555,55 +1597,55 @@
                 <div class="pricing-grid">
                     <div class="pricing-card">
                         <div class="pricing-header">
-                            <h4>Basic Web</h4>
+                            <h3>Basic Web</h3>
                             <div class="price">18,000<span>Birr</span></div>
                         </div>
                         <ul class="pricing-features">
-                            <li><i class="fas fa-check"></i> Static website</li>
-                            <li><i class="fas fa-check"></i> 30-day Full-time support</li>
-                            <li><i class="fas fa-check"></i> SSL certificate</li>
-                            <li><i class="fas fa-check"></i> One-time maintenance</li>
-                            <li><i class="fas fa-check"></i> Project guidance</li>
-                            <li><i class="fas fa-times"></i> Hosting & domain assistance</li>
-                            <li><i class="fas fa-times"></i> Database</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Static website</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> 30-day Full-time support</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> SSL certificate</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> One-time maintenance</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Project guidance</li>
+                            <li><i class="fas fa-times" aria-hidden="true"></i> Hosting & domain assistance</li>
+                            <li><i class="fas fa-times" aria-hidden="true"></i> Database</li>
                         </ul>
                         <a href="#contact" class="btn-pricing" data-package="Basic Web">Order Now</a>
                     </div>
 
                     <div class="pricing-card featured">
-                        <div class="popular-badge">RECOMMENDED</div>
+                        <div class="popular-badge" aria-hidden="true">RECOMMENDED</div>
                         <div class="pricing-header">
-                            <h4>ProSite Plus</h4>
+                            <h3>ProSite Plus</h3>
                             <div class="price">25,000<span>Birr</span></div>
                         </div>
                         <ul class="pricing-features">
-                            <li><i class="fas fa-check"></i> Dynamic website</li>
-                            <li><i class="fas fa-check"></i> 60-day Full-time support</li>
-                            <li><i class="fas fa-check"></i> SSL certificate</li>
-                            <li><i class="fas fa-check"></i> Monthly maintenance</li>
-                            <li><i class="fas fa-check"></i> Project guidance</li>
-                            <li><i class="fas fa-check"></i> Hosting & domain assistance</li>
-                            <li><i class="fas fa-check"></i> Database Included</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Dynamic website</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> 60-day Full-time support</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> SSL certificate</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Monthly maintenance</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Project guidance</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Hosting & domain assistance</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Database Included</li>
                         </ul>
                         <a href="#contact" class="btn-pricing" data-package="ProSite Plus">Order Now</a>
                     </div>
 
                     <div class="pricing-card">
                         <div class="pricing-header">
-                            <h4>Premium Web <i class="fas fa-crown"></i></h4>
+                            <h3>Premium Web <i class="fas fa-crown" aria-hidden="true"></i></h3>
                             <div class="price">45,000<span>Birr</span></div>
                         </div>
                         <ul class="pricing-features">
-                            <li><i class="fas fa-check"></i> Dynamic & highly appealing website</li>
-                            <li><i class="fas fa-check"></i> Lifetime support</li>
-                            <li><i class="fas fa-check"></i> SSL certificate</li>
-                            <li><i class="fas fa-check"></i> 24/7 Maintenance</li>
-                            <li><i class="fas fa-check"></i> Database Integration</li>
-                            <li><i class="fas fa-check"></i> Expert project guidance</li>
-                            <li><i class="fas fa-check"></i> Hosting & domain assistance</li>
-                            <li><i class="fas fa-check"></i> Major Backups</li>
-                            <li><i class="fas fa-check"></i> Payment Integration</li>
-                            <li><i class="fas fa-check"></i> Admin Panel</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Dynamic & highly appealing website</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Lifetime support</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> SSL certificate</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> 24/7 Maintenance</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Database Integration</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Expert project guidance</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Hosting & domain assistance</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Major Backups</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Payment Integration</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Admin Panel</li>
                         </ul>
                         <a href="#contact" class="btn-pricing" data-package="Premium Web">Order Now</a>
                     </div>
@@ -1620,47 +1662,47 @@
                 <div class="contact-content">
                     <div class="contact-info">
                         <div class="contact-item">
-                            <div class="contact-icon">
+                            <div class="contact-icon" aria-hidden="true">
                                 <i class="fas fa-map-marker-alt"></i>
                             </div>
                             <div class="contact-details">
-                                <h4>Location</h4>
+                                <h3>Location</h3>
                                 <p>Alembank, Addis Ababa, Ethiopia</p>
                             </div>
                         </div>
 
                         <div class="contact-item">
-                            <div class="contact-icon">
+                            <div class="contact-icon" aria-hidden="true">
                                 <i class="fas fa-envelope"></i>
                             </div>
                             <div class="contact-details">
-                                <h4>Email</h4>
+                                <h3>Email</h3>
                                 <p>yonsbreak7@gmail.com</p>
                             </div>
                         </div>
 
                         <div class="contact-item">
-                            <div class="contact-icon">
+                            <div class="contact-icon" aria-hidden="true">
                                 <i class="fas fa-phone"></i>
                             </div>
                             <div class="contact-details">
-                                <h4>Call</h4>
+                                <h3>Call</h3>
                                 <p>+2519-67-28-56-00</p>
                             </div>
                         </div>
 
                         <div class="social-links">
                             <a href="https://t.me/Yoni_K" class="social-link" aria-label="Telegram">
-                                <i class="fab fa-telegram"></i>
+                                <i class="fab fa-telegram" aria-hidden="true"></i>
                             </a>
                             <a href="https://www.facebook.com/profile.php?id=100006299029078" class="social-link" aria-label="Facebook">
-                                <i class="fab fa-facebook-f"></i>
+                                <i class="fab fa-facebook-f" aria-hidden="true"></i>
                             </a>
                             <a href="https://www.instagram.com/yoninani7/" class="social-link" aria-label="Instagram">
-                                <i class="fab fa-instagram"></i>
+                                <i class="fab fa-instagram" aria-hidden="true"></i>
                             </a>
                             <a href="https://wa.me/qr/DAASMBETWYIHJ1" class="social-link" aria-label="WhatsApp">
-                                <i class="fab fa-whatsapp"></i>
+                                <i class="fab fa-whatsapp" aria-hidden="true"></i>
                             </a>
                         </div>
                     </div>
@@ -1708,12 +1750,12 @@
     </main>
 
     <!-- Footer Section -->
-    <footer class="compact-footer">
+    <footer class="compact-footer" role="contentinfo">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
                     <a href="index.html" aria-label="Home">
-                        <img src="assets/img/yklogo.png" alt="Yonatan Kassahun Logo" class="footer-logo">
+                        <img src="assets/img/yklogo.png" alt="Yonatan Kassahun Logo" class="footer-logo" loading="lazy">
                     </a>
                     <div class="brand-text">
                         <div>Yonatan Kassahun</div>
@@ -1723,17 +1765,17 @@
 
                 <div class="footer-contact">
                     <div class="footer-contact-item">
-                        <i class="fas fa-envelope"></i>
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
                         <span>yonsbreak7@gmail.com</span>
                     </div>
                     <div class="footer-contact-item">
-                        <i class="fas fa-phone"></i>
+                        <i class="fas fa-phone" aria-hidden="true"></i>
                         <span>+2519-67-28-56-00</span>
                     </div>
                 </div>
             </div>
 
-            <div class="footer-divider"></div>
+            <div class="footer-divider" aria-hidden="true"></div>
 
             <div class="footer-bottom">
                 <div class="copyright">
@@ -1742,16 +1784,16 @@
 
                 <div class="footer-social">
                     <a href="https://t.me/Yoni_K" class="social-link" aria-label="Telegram">
-                        <i class="fab fa-telegram"></i>
+                        <i class="fab fa-telegram" aria-hidden="true"></i>
                     </a>
                     <a href="https://www.facebook.com/profile.php?id=100006299029078" class="social-link" aria-label="Facebook">
-                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-facebook-f" aria-hidden="true"></i>
                     </a>
                     <a href="https://www.instagram.com/yoninani7/" class="social-link" aria-label="Instagram">
-                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-instagram" aria-hidden="true"></i>
                     </a>
                     <a href="https://wa.me/qr/DAASMBETWYIHJ1" class="social-link" aria-label="WhatsApp">
-                        <i class="fab fa-whatsapp"></i>
+                        <i class="fab fa-whatsapp" aria-hidden="true"></i>
                     </a>
                 </div>
             </div>
@@ -1759,11 +1801,24 @@
     </footer>
 
     <script>
-        // Enhanced smooth scrolling function
-        function smoothScrollTo(targetElement, duration = 1000) {
+        // Optimized navigation functionality
+        const header = document.getElementById('header');
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        // Optimized smooth scrolling function
+        function smoothScrollTo(targetElement) {
             const targetPosition = targetElement.offsetTop - 100;
             const startPosition = window.pageYOffset;
             const distance = targetPosition - startPosition;
+            
+            // For very short distances, use instant scroll
+            if (Math.abs(distance) < 200) {
+                window.scrollTo(0, targetPosition);
+                return;
+            }
+            
+            const duration = Math.min(600, Math.abs(distance) * 0.6);
             let startTime = null;
 
             function animation(currentTime) {
@@ -1771,11 +1826,9 @@
                 const timeElapsed = currentTime - startTime;
                 const progress = Math.min(timeElapsed / duration, 1);
                 
-                // Easing function for smoother scrolling
-                const ease = progress < 0.5 
-                    ? 2 * progress * progress 
-                    : -1 + (4 - 2 * progress) * progress;
-
+                // Simple ease-out function
+                const ease = 1 - Math.pow(1 - progress, 3);
+                
                 window.scrollTo(0, startPosition + distance * ease);
 
                 if (timeElapsed < duration) {
@@ -1786,18 +1839,12 @@
             requestAnimationFrame(animation);
         }
 
-        // Navigation functionality
-        const header = document.getElementById('header');
-        const hamburger = document.querySelector('.hamburger');
-        const navMenu = document.querySelector('.nav-menu');
-
         // Toggle menu function
         function toggleMenu() {
             hamburger.classList.toggle('active');
             navMenu.classList.toggle('active');
             hamburger.setAttribute('aria-expanded', hamburger.classList.contains('active'));
 
-            // Prevent body scrolling when menu is open
             if (navMenu.classList.contains('active')) {
                 document.body.style.overflow = 'hidden';
             } else {
@@ -1808,7 +1855,7 @@
         // Hamburger click event
         hamburger.addEventListener('click', toggleMenu);
 
-        // Close menu when clicking on links
+        // Optimized navigation click handler
         document.querySelectorAll('.nav-link').forEach(link => {
             link.addEventListener('click', (e) => {
                 e.preventDefault();
@@ -1816,13 +1863,14 @@
                 const targetElement = document.querySelector(targetId);
                 
                 if (targetElement) {
+                    // Immediately close menu
+                    if (navMenu.classList.contains('active')) {
+                        toggleMenu();
+                    }
+                    
+                    // Start smooth scroll
                     smoothScrollTo(targetElement);
                 }
-                
-                hamburger.classList.remove('active');
-                navMenu.classList.remove('active');
-                hamburger.setAttribute('aria-expanded', 'false');
-                document.body.style.overflow = 'auto';
             });
         });
 
@@ -1833,35 +1881,27 @@
             }
         });
 
-        // Scroll effect for header
-        window.addEventListener('scroll', function () {
+        // Debounced scroll function
+        function debounce(func, wait) {
+            let timeout;
+            return function executedFunction(...args) {
+                const later = () => {
+                    clearTimeout(timeout);
+                    func(...args);
+                };
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
+            };
+        }
+
+        // Optimized scroll effect for header
+        window.addEventListener('scroll', debounce(function () {
             if (window.scrollY > 50) {
                 header.classList.add('scrolled');
             } else {
                 header.classList.remove('scrolled');
             }
-        });
-
-        // Scroll animations
-        function animateOnScroll() {
-            const elements = document.querySelectorAll('.service-card, .pricing-card, .detail-item');
-
-            elements.forEach(element => {
-                const position = element.getBoundingClientRect();
-
-                if (position.top < window.innerHeight - 100) {
-                    element.style.opacity = 1;
-                    element.style.transform = 'translateY(0)';
-                }
-            });
-        }
-
-        // Set initial state for animated elements
-        document.querySelectorAll('.service-card, .pricing-card, .detail-item').forEach(element => {
-            element.style.opacity = 0;
-            element.style.transform = 'translateY(50px)';
-            element.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
-        });
+        }, 10));
 
         // Typing animation
         document.addEventListener('DOMContentLoaded', function () {
@@ -1957,6 +1997,27 @@
             }
             // If validation passes, submit the form
             this.submit();
+        });
+
+        // Scroll animations
+        function animateOnScroll() {
+            const elements = document.querySelectorAll('.service-card, .pricing-card, .detail-item');
+
+            elements.forEach(element => {
+                const position = element.getBoundingClientRect();
+
+                if (position.top < window.innerHeight - 100) {
+                    element.style.opacity = 1;
+                    element.style.transform = 'translateY(0)';
+                }
+            });
+        }
+
+        // Set initial state for animated elements
+        document.querySelectorAll('.service-card, .pricing-card, .detail-item').forEach(element => {
+            element.style.opacity = 0;
+            element.style.transform = 'translateY(50px)';
+            element.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
         });
 
         // Add loading state for better UX

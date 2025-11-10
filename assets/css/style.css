@@ -415,9 +415,7 @@ section {
 
 .about .content ul li {
   margin-bottom: 20px;
-  display: flex;
-
-
+  display: flex; 
 }
 
 .about .content ul strong {
