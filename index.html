@@ -381,7 +381,7 @@
             color: white;
             position: relative;
             overflow: hidden;
-            padding-top: 80px;
+            padding-top: 50px;
             transform: translateZ(0);
         }
 
@@ -409,7 +409,7 @@
             text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
             font-weight: 800;
             letter-spacing: -0.03em;
-            background: linear-gradient(to right, #fff, var(--accent));
+            background: linear-gradient(to bottom, #fff, var(--accent));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -1093,7 +1093,10 @@
         }
 
         .contact-form button {
-            width: 100%;
+            position: relative;
+            overflow: hidden;
+            z-index: 1; 
+            width:100%;
             padding: 16px;
             background: var(--gradient);
             color: white;
@@ -1102,14 +1105,27 @@
             font-weight: 600;
             font-size: 1rem;
             cursor: pointer;
-            transition: var(--transition);
             min-height: 44px; /* Accessibility requirement */
+             
         }
-
-        .contact-form button:hover {
+ 
+        .contact-form button::before {
+            content: '';
+            position: absolute;
+            inset: 0;
             background: var(--gradient-gold);
-            transform: translateY(-3px);
-            box-shadow: var(--shadow-md);
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.35s ease;
+        }
+ 
+        .contact-form button:hover::before {
+            opacity: 1;
+        }
+ 
+        .contact-form button:hover {
+             
+            color: white;
         }
 
         /* Footer Section */
@@ -1430,8 +1446,8 @@
             <p class="hero-subtitle">Crafting <span class="typed-text"></span><span class="cursor" aria-hidden="true">&nbsp;</span>
                 Websites</p>
             <div class="hero-buttons">
-                <a href="#contact" class="btn btn-primary">Start a Project</a>
-                <a href="#about" class="btn btn-outline">Discover My Work</a>
+                <a href="#contact" class="btn btn-primary" style="padding: 10px 70px;">Start a Project</a>
+                <a href="#about" class="btn btn-outline" style="padding: 10px 70px;">Discover My Work</a>
             </div>
         </div>
 
@@ -1740,8 +1756,9 @@
                                 <label for="message">Your Message</label>
                                 <textarea style="resize: none;" name="message" id="message" rows="5" required></textarea>
                             </div>
-                            
-                            <button type="submit" class="btn btn-primary">Send Message</button>
+                             
+                            <button type="submit" class="btn btn-primary"  >Send Message</button>
+                             
                         </form>
                     </div>
                 </div>
