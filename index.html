@@ -1,2082 +1,851 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="google-site-verification"
+      content="N20XePC9K2HdMtfhCVJf0P0mk3XuX3jMkLAzfOh-SW4"
+    />
+    <title>
+      Yonatan Kassahun | UI/UX Designer & Web Developer | Addis Ababa
+    </title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="N20XePC9K2HdMtfhCVJf0P0mk3XuX3jMkLAzfOh-SW4" />
-    <meta name="google-adsense-account" content="ca-pub-3478785527806223">
-    <title>Yonatan Kassahun | UI/UX Designer & Web Developer | Addis Ababa, Ethiopia</title>
-    <meta name="description"
-        content="Professional UI/UX Designer and Web Developer in Addis Ababa, Ethiopia. Specializing in responsive web design, development, and digital solutions. Get custom websites starting from 18,000 Birr.">
-    <meta name="keywords"
-        content="yonatan kassahun, web developer, ui ux designer, addis ababa, ethiopia, website design, web development, responsive design, seo optimization, freelance web developer">
-    <meta name="author" content="Yonatan Kassahun">
-    <meta name="robots" content="index, follow">
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="Professional UI/UX Designer and Web Developer in Addis Ababa, Ethiopia. Specializing in responsive web design, development, and digital solutions."
+    />
+    <meta
+      name="keywords"
+      content="yonatan kassahun, web developer, ui ux designer, addis ababa, ethiopia, website design, web development"
+    />
 
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Yonatan Kassahun | UI/UX Designer & Web Developer">
-    <meta property="og:description"
-        content="Professional UI/UX Designer and Web Developer in Addis Ababa, Ethiopia. Creating engaging digital experiences.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://yonikass.netlify.app/">
-    <meta property="og:image" content="https://yonikass.netlify.app/assets/img/yklogo.png">
-    <meta property="og:locale" content="en_US">
-
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://yonikass.netlify.app/">
-
-    <!-- Preload critical resources -->
-    <link rel="preload" href="assets/img/bg.png" as="image">
-    <link rel="preload" href="assets/img/a.jpg" as="image">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <!-- Structured Data -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Yonatan Kassahun",
-        "jobTitle": "UI/UX Designer & Web Developer",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Addis Ababa",
-            "addressCountry": "Ethiopia"
-        },
-        "email": "yonsbreak7@gmail.com",
-        "telephone": "+251-967-28-56-00",
-        "url": "https://yonikass.netlify.app/",
-        "sameAs": [
-            "https://t.me/Yoni_K",
-            "https://www.facebook.com/profile.php?id=100006299029078",
-            "https://www.instagram.com/yoninani7/"
-        ]
-    }
-    </script>
-
-    <link rel="icon" href="assets/img/yklogowhite.png" sizes="16x16" type="image/png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Fonts -->
     <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,400&family=Montserrat:wght@200;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
     <style>
-        :root {
-            --primary: #1a1f36;
-            --secondary: #2d3748;
-            --accent: #d4af37;
-            --gold: #d4af37;
-            --light: #f8fafc;
-            --dark: #1a202c;
-            --text: #2d3748;
-            --text-light: #718096;
-            --transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-            --shadow-sm: 0 2px 15px rgba(0, 0, 0, 0.08);
-            --shadow-md: 0 8px 30px rgba(0, 0, 0, 0.12);
-            --shadow-lg: 0 15px 40px rgba(0, 0, 0, 0.15);
-            --gradient: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
-            --gradient-gold: linear-gradient(135deg, var(--accent) 0%, #d2863a 100%);
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-            scroll-padding-top: 100px;
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            line-height: 1.7;
-            color: var(--text);
-            background-color: var(--light);
-            overflow-x: hidden;
-        }
-
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            font-family: 'Playfair Display', serif;
-            font-weight: 700;
-            line-height: 1.2;
-            letter-spacing: -0.02em;
-        }
-
-        /* Improved heading hierarchy for SEO */
-        h1 {
-            font-size: 2.5em;
-        }
-
-        h2 {
-            font-size: 2em;
-        }
-
-        h3 {
-            font-size: 1.75em;
-        }
-
-        h4 {
-            font-size: 1.5em;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-            transition: var(--transition);
-        }
-
-        ul {
-            list-style: none;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        /* Add alt text styling for images */
-        img[alt] {
-            font-style: italic;
-            color: var(--text-light);
-        }
-
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 15px;
-        }
-
-        .section {
-            padding: 50px 0;
-        }
-
-        .section-title {
-            font-size: 3rem;
-            text-align: center;
-            margin-bottom: 1.5rem;
-            color: var(--dark);
-            position: relative;
-            font-weight: 700;
-        }
-
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: -15px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 80px;
-            height: 4px;
-            background: var(--gradient-gold);
-            border-radius: 2px;
-        }
-
-        .section-subtitle {
-            font-size: 1.25rem;
-            text-align: center;
-            margin-bottom: 1rem;
-            color: var(--text-light);
-            font-weight: 400;
-        }
-
-        .section-description {
-            text-align: center;
-            margin-bottom: 3rem;
-            color: var(--text-light);
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-            font-size: 1.1rem;
-            line-height: 1.8;
-        }
-
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            padding: 16px 36px;
-            border-radius: 50px;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1.2px;
-            transition: var(--transition);
-            cursor: pointer;
-            font-size: 0.95rem;
-            position: relative;
-            overflow: hidden;
-            z-index: 1;
-            border: none;
-            min-height: 44px;
-            /* Accessibility requirement */
-        }
-
-        .btn::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 0%;
-            height: 100%;
-            z-index: -1;
-            transition: var(--transition);
-        }
-
-        .btn:hover::before {
-            width: 100%;
-        }
-
-        .btn-primary {
-            background: var(--gradient);
-            color: white;
-            box-shadow: var(--shadow-md);
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-3px);
-            box-shadow: var(--shadow-lg);
-            color: white;
-        }
-
-        .btn-outline {
-            background: transparent;
-            color: var(--light);
-            border: 2px solid var(--light);
-        }
-
-        .btn-outline:hover {
-            background: var(--gradient);
-            color: white;
-            border-color: transparent;
-        }
-
-        /* Header & Navigation */
-        .header {
-            position: fixed;
-            top: 30px;
-            left: 0;
-            right: 0;
-            z-index: 1000;
-            background: rgba(255, 255, 255, 0.9);
-            backdrop-filter: blur(15px);
-            padding: 0.8rem 0;
-            transition: var(--transition);
-            box-shadow: var(--shadow-sm);
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 85%;
-            margin: 0 auto;
-            will-change: transform;
-        }
-
-        .header.scrolled {
-            padding: 0.9rem 0;
-            top: 15px;
-            width: 92%;
-            box-shadow: var(--shadow-md);
-            background-color: rgba(255, 255, 255, 0.95);
-        }
-
-        .nav-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 100%;
-            padding: 0 2rem;
-        }
-
-        .Logo {
-            height: 45px;
-            margin-left: 20%;
-            width: auto;
-            transition: var(--transition);
-        }
-
-        .header.scrolled .Logo {
-            height: 40px;
-        }
-
-        .nav-menu {
-            display: flex;
-            align-items: center;
-            gap: 2.5rem;
-        }
-
-        .nav-link {
-            color: var(--dark);
-            font-weight: 600;
-            transition: var(--transition);
-            position: relative;
-            text-transform: uppercase;
-            font-size: 0.95rem;
-            letter-spacing: 0.5px;
-            padding: 8px 0;
-            /* For better touch targets */
-        }
-
-        .nav-link::after {
-            content: '';
-            position: absolute;
-            bottom: -6px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: var(--gold);
-            transition: var(--transition);
-        }
-
-        .nav-link:hover {
-            color: var(--gold);
-        }
-
-        .nav-link:hover::after {
-            width: 100%;
-        }
-
-        .hamburger {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-            width: 30px;
-            height: 24px;
-            justify-content: space-between;
-            background: transparent;
-            border: none;
-            padding: 0;
-        }
-
-        .bar {
-            width: 100%;
-            height: 3px;
-            background: var(--dark);
-            transition: var(--transition);
-            border-radius: 3px;
-        }
-
-        .hamburger.active .bar:nth-child(1) {
-            transform: translateY(10.5px) rotate(45deg);
-        }
-
-        .hamburger.active .bar:nth-child(2) {
-            opacity: 0;
-        }
-
-        .hamburger.active .bar:nth-child(3) {
-            transform: translateY(-10.5px) rotate(-45deg);
-        }
-
-        /* Enhanced Hero Section */
-        .hero {
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url('assets/img/bg.png') center/cover no-repeat;
-            background-attachment: fixed;
-            color: white;
-            position: relative;
-            overflow: hidden;
-            padding-top: 50px;
-            transform: translateZ(0);
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: radial-gradient(circle at 20% 80%, rgba(212, 175, 55, 0.2) 0%, transparent 50%),
-                radial-gradient(circle at 80% 20%, rgba(26, 31, 54, 0.3) 0%, transparent 50%);
-        }
-
-        .hero-content {
-            max-width: 850px;
-            padding: 0 20px;
-            z-index: 1;
-        }
-
-        .hero-title {
-            font-size: 4.5rem;
-            margin-bottom: 1.5rem;
-            animation: fadeInDown 1s ease;
-            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
-            font-weight: 800;
-            letter-spacing: -0.03em;
-            background: linear-gradient(to bottom, #f5deb3, #d4af37);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .hero-subtitle {
-            font-size: 2rem;
-            margin-bottom: 3rem;
-            animation: fadeInUp 1s ease;
-            font-weight: 300;
-        }
-
-        .typed-text {
-            background: linear-gradient(to bottom, wheat, var(--accent));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-weight: 600;
-            position: relative;
-        }
-
-
-        .cursor {
-            display: inline-block;
-            background-color: var(--gold);
-            margin-left: 0.1rem;
-            width: 3px;
-            animation: blink 1s infinite;
-        }
-
-        @keyframes blink {
-            0% {
-                opacity: 1;
-            }
-
-            50% {
-                opacity: 0;
-            }
-
-            100% {
-                opacity: 1;
-            }
-        }
-
-        .hero-buttons {
-            display: flex;
-            gap: 1.5rem;
-            justify-content: center;
-            animation: fadeIn 1s ease 0.5s forwards;
-            opacity: 0;
-            flex-wrap: wrap;
-        }
-
-        .scroll-indicator {
-            position: absolute;
-            bottom: 40px;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            color: white;
-            font-size: 0.9rem;
-            animation: bounce 2s infinite;
-            z-index: 1;
-        }
-
-        .scroll-indicator i {
-            margin-top: 10px;
-            font-size: 1.5rem;
-        }
-
-        @keyframes bounce {
-
-            0%,
-            20%,
-            50%,
-            80%,
-            100% {
-                transform: translateY(0) translateX(-50%);
-            }
-
-            40% {
-                transform: translateY(-10px) translateX(-50%);
-            }
-
-            60% {
-                transform: translateY(-5px) translateX(-50%);
-            }
-        }
-
-        @keyframes fadeInDown {
-            from {
-                opacity: 0;
-                transform: translateY(-30px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-
-            to {
-                opacity: 1;
-            }
-        }
-
-        /* About Section */
-        .about {
-            background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .about::before {
-            content: '';
-            position: absolute;
-            top: -100px;
-            right: -100px;
-            width: 300px;
-            height: 300px;
-            background: var(--gradient);
-            opacity: 0.03;
-            border-radius: 50%;
-            z-index: 0;
-        }
-
-        .about::after {
-            content: '';
-            position: absolute;
-            bottom: -100px;
-            left: -100px;
-            width: 400px;
-            height: 400px;
-            background: var(--gradient);
-            opacity: 0.03;
-            border-radius: 50%;
-            z-index: 0;
-        }
-
-        .about-content {
-            display: grid;
-            grid-template-columns: 1fr 1.8fr;
-            gap: 5rem;
-            position: relative;
-            z-index: 1;
-            align-items: start;
-        }
-
-        .image-container {
-            position: relative;
-            width: 430px;
-            height: 430px;
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: var(--shadow-lg);
-            transition: var(--transition);
-            background: var(--gradient-gold);
-            margin-top: -40px;
-            transform: translateZ(0);
-            backface-visibility: hidden;
-            perspective: 1000px;
-        }
-
-        .image-container:hover {
-            transform: translateY(-10px) rotate(2deg);
-            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
-        }
-
-        .image-container img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: var(--transition);
-        }
-
-        .image-container:hover img {
-            transform: scale(1.05);
-        }
-
-        .image-border {
-            position: absolute;
-            width: 104%;
-            height: 104%;
-            border: 4px solid var(--secondary);
-            border-radius: 24px;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: -1;
-            opacity: 0.3;
-        }
-
-        .about-text h2 {
-            font-size: 2.2rem;
-            margin-bottom: 1.8rem;
-            color: var(--dark);
-            position: relative;
-            display: inline-block;
-            font-weight: 700;
-        }
-
-        .about-text h2::after {
-            content: '';
-            position: absolute;
-            bottom: -12px;
-            left: 0;
-            width: 60px;
-            height: 4px;
-            background: var(--gradient-gold);
-            border-radius: 2px;
-        }
-
-        .about-text p {
-            margin-bottom: 1.8rem;
-            line-height: 1.8;
-            color: var(--text);
-            font-size: 1.05rem;
-        }
-
-        .highlight {
-            color: var(--secondary);
-            font-weight: 600;
-            position: relative;
-            z-index: 1;
-        }
-
-        .highlight::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 8px;
-            background: rgba(212, 175, 55, 0.25);
-            z-index: -1;
-        }
-
-        .about-details {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 1.8rem;
-            margin: 2.5rem 0;
-        }
-
-        .detail-item {
-            display: flex;
-            align-items: center;
-            margin-bottom: 1.2rem;
-            background: rgba(255, 255, 255, 0.8);
-            padding: 20px;
-            border-radius: 12px;
-            transition: var(--transition);
-            box-shadow: var(--shadow-sm);
-            border: 1px solid rgba(0, 0, 0, 0.05);
-            transform: translateZ(0);
-            backface-visibility: hidden;
-            perspective: 1000px;
-        }
-
-        .detail-item:hover {
-            background: rgba(255, 255, 255, 0.95);
-            transform: translateY(-5px);
-            box-shadow: var(--shadow-md);
-        }
-
-        .detail-icon {
-            width: 50px;
-            height: 50px;
-            background: var(--gradient-gold);
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-right: 18px;
-            color: white;
-            font-size: 1.2rem;
-            flex-shrink: 0;
-        }
-
-        .detail-content strong {
-            display: block;
-            color: var(--dark);
-            font-weight: 700;
-            font-size: 1.1rem;
-        }
-
-        .detail-content span {
-            color: var(--text-light);
-            font-size: 0.95rem;
-        }
-
-        .skills-section {
-            margin-top: 3rem;
-        }
-
-        .skills-section h3 {
-            font-size: 1.6rem;
-            margin-bottom: 1.8rem;
-            color: var(--dark);
-            position: relative;
-            display: inline-block;
-            font-weight: 600;
-        }
-
-        .skills-section h3::after {
-            content: '';
-            position: absolute;
-            bottom: -10px;
-            left: 0;
-            width: 50px;
-            height: 3px;
-            background: var(--gradient-gold);
-            border-radius: 2px;
-        }
-
-        .skills-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-
-        .skill-tag {
-            background: rgba(212, 175, 55, 0.1);
-            color: var(--secondary);
-            padding: 10px 22px;
-            border-radius: 50px;
-            font-weight: 500;
-            transition: var(--transition);
-            border: 1px solid rgba(212, 175, 55, 0.2);
-            font-size: 0.95rem;
-        }
-
-        .skill-tag:hover {
-            transform: translateY(-3px);
-            background: rgba(212, 175, 55, 0.2);
-            box-shadow: 0 10px 20px rgba(212, 175, 55, 0.2);
-        }
-
-        /* Services Section */
-        .services {
-            background: var(--light);
-        }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 2.5rem;
-            margin-top: 4rem;
-        }
-
-        .service-card {
-            background: white;
-            padding: 3rem 2.5rem;
-            border-radius: 12px;
-            text-align: center;
-            transition: var(--transition);
-            position: relative;
-            overflow: hidden;
-            border: 1px solid rgba(0, 0, 0, 0.03);
-            box-shadow: var(--shadow-sm);
-            transform: translateZ(0);
-            backface-visibility: hidden;
-            perspective: 1000px;
-        }
-
-        .service-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 5px;
-            height: 0;
-            background: var(--gradient-gold);
-            transition: var(--transition);
-        }
-
-        .service-card:hover::before {
-            height: 100%;
-        }
-
-        .service-card:hover {
-            transform: translateY(-10px);
-            box-shadow: var(--shadow-lg);
-        }
-
-        .service-icon {
-            font-size: 3rem;
-            color: var(--primary);
-            margin-bottom: 1.5rem;
-            transition: var(--transition);
-            display: inline-block;
-            height: 80px;
-            width: 80px;
-            line-height: 80px;
-            background: rgba(212, 175, 55, 0.1);
-            border-radius: 20px;
-        }
-
-        .service-card:hover .service-icon {
-            color: var(--gold);
-            transform: rotateY(180deg);
-        }
-
-        .service-card h3 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-            color: var(--dark);
-            transition: var(--transition);
-        }
-
-        .service-card p {
-            color: var(--text-light);
-            transition: var(--transition);
-            line-height: 1.8;
-        }
-
-        /* Pricing Section */
-        .pricing {
-            background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
-        }
-
-        .pricing-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 2.8rem;
-            margin-top: 4rem;
-        }
-
-        .pricing-card {
-            background: white;
-            border-radius: 12px;
-            padding: 3rem 2.5rem;
-            box-shadow: var(--shadow-sm);
-            transition: var(--transition);
-            position: relative;
-            overflow: hidden;
-            z-index: 1;
-            border: 1px solid rgba(0, 0, 0, 0.05);
-            transform: translateZ(0);
-            backface-visibility: hidden;
-            perspective: 1000px;
-        }
-
-        .pricing-card:hover {
-            transform: translateY(-10px);
-            box-shadow: var(--shadow-lg);
-        }
-
-        .pricing-card.featured {
-            border: 2px solid var(--gold);
-            transform: scale(1.03);
-        }
-
-        .pricing-card.featured:hover {
-            transform: scale(1.03) translateY(-10px);
-        }
-
-        .popular-badge {
-            position: absolute;
-            top: 35px;
-            right: -40px;
-            background: var(--gradient-gold);
-            color: white;
-            padding: 5px 35px;
-            font-size: 0.8rem;
-            font-weight: 600;
-            transform: rotate(45deg);
-        }
-
-        .pricing-header {
-            text-align: center;
-            margin-bottom: 2rem;
-            padding-bottom: 2rem;
-            border-bottom: 1px solid #eee;
-        }
-
-        .pricing-header h3 {
-            font-size: 1.8rem;
-            margin-bottom: 1rem;
-            color: var(--dark);
-        }
-
-        .price {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: var(--primary);
-            display: flex;
-            justify-content: center;
-            align-items: baseline;
-        }
-
-        .price span {
-            font-size: 1rem;
-            font-weight: 500;
-            color: var(--text-light);
-            margin-left: 0.5rem;
-            display: none;
-        }
-
-        .pricing-features {
-            margin-bottom: 2rem;
-        }
-
-        .pricing-features li {
-            display: flex;
-            align-items: center;
-            margin-bottom: 0.8rem;
-            color: var(--text);
-        }
-
-        .pricing-features i {
-            margin-right: 10px;
-            font-size: 0.9rem;
-        }
-
-        .pricing-features .fa-check {
-            color: #27ae60;
-        }
-
-        .pricing-features .fa-times {
-            color: #e74c3c;
-        }
-
-        .btn-pricing {
-            display: block;
-            text-align: center;
-            padding: 14px 0;
-            background: var(--gradient);
-            color: white;
-            border-radius: 6px;
-            font-weight: 600;
-            transition: var(--transition);
-            cursor: pointer;
-            border: none;
-            font-size: 1rem;
-            min-height: 44px;
-            /* Accessibility requirement */
-        }
-
-        .btn-pricing:hover {
-            background: var(--gradient-gold);
-            transform: translateY(-3px);
-            box-shadow: var(--shadow-md);
-        }
-
-        /* Contact Section */
-        .contact {
-            background: var(--light);
-        }
-
-        .contact-content {
-            display: grid;
-            grid-template-columns: 1fr 2.5fr;
-            gap: 5rem;
-        }
-
-        .contact-info {
-            display: flex;
-            flex-direction: column;
-            gap: 2.5rem;
-        }
-
-        .contact-item {
-            display: flex;
-            align-items: flex-start;
-            gap: 1.5rem;
-            width: 100%;
-        }
-
-        .contact-icon {
-            transition: var(--transition);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 10px;
-            padding: 15px;
-            width: 50px;
-            height: 50px;
-            background: rgba(212, 175, 55, 0.1);
-            color: var(--shadow-lg);
-        }
-
-        .contact-item:hover .contact-icon {
-            background: var(--primary);
-            color: white;
-            transform: scale(1.1) rotate(-2deg);
-        }
-
-        .contact-details h3 {
-            font-size: 1.2rem;
-            margin-bottom: 0.5rem;
-            color: var(--dark);
-        }
-
-        .contact-details p {
-            color: var(--text-light);
-            font-size: 1rem;
-        }
-
-        .social-links {
-            display: flex;
-            gap: 1rem;
-            margin-top: 2rem;
-        }
-
-        .social-link {
-            width: 50px;
-            height: 50px;
-            border: 1px solid var(--primary);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: var(--transition);
-            color: var(--primary);
-            font-size: 1.2rem;
-        }
-
-        .social-link:hover {
-            background: var(--gradient);
-            color: white;
-            transform: translateY(-5px);
-        }
-
-        .contact-form {
-            background: white;
-            padding: 3rem;
-            border-radius: 12px;
-            box-shadow: var(--shadow-lg);
-        }
-
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 0.5rem;
-            font-weight: 500;
-            color: var(--dark);
-        }
-
-        .form-group input,
-        .form-group textarea,
-        .form-group select {
-            width: 100%;
-            padding: 16px;
-            background: #f9f9f9;
-            border: 1px solid #e2e8f0;
-            border-radius: 6px;
-            color: var(--text);
-            font-family: inherit;
-            transition: var(--transition);
-            font-size: 1rem;
-        }
-
-        .form-group input:focus,
-        .form-group textarea:focus,
-        .form-group select:focus {
-            border-color: var(--gold);
-            background: white;
-            box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
-            outline: none;
-        }
-
-        .form-group textarea {
-            resize: vertical;
-            min-height: 150px;
-        }
-
-        .contact-form button {
-            position: relative;
-            overflow: hidden;
-            z-index: 1;
-            width: 100%;
-            padding: 16px;
-            background: var(--gradient);
-            color: white;
-            border: none;
-            border-radius: 6px;
-            font-weight: 600;
-            font-size: 1rem;
-            cursor: pointer;
-            min-height: 44px;
-            /* Accessibility requirement */
-
-        }
-
-        .contact-form button::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: var(--gradient-gold);
-            z-index: -1;
-            opacity: 0;
-            transition: opacity 0.35s ease;
-        }
-
-        .contact-form button:hover::before {
-            opacity: 1;
-        }
-
-        .contact-form button:hover {
-
-            color: white;
-        }
-
-        /* Footer Section */
-        .compact-footer {
-            background: var(--dark);
-            color: white;
-            padding: 40px 0 20px;
-            width: 100%;
-            margin-top: 50px;
-        }
-
-        .footer-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 1.5rem;
-        }
-
-        .footer-brand {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-
-        .footer-logo {
-            width: 40px;
-            height: auto;
-            filter: brightness(0) invert(1);
-        }
-
-        .brand-text {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .footer-tagline {
-            font-size: 0.8rem;
-            color: rgba(255, 255, 255, 0.7);
-            margin-top: 0.2rem;
-        }
-
-        .footer-contact {
-            display: flex;
-            flex-direction: column;
-            gap: 0.8rem;
-            text-align: right;
-        }
-
-        .footer-contact-item {
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            gap: 0.5rem;
-            font-size: 0.85rem;
-        }
-
-        .footer-divider {
-            height: 1px;
-            background: rgba(255, 255, 255, 0.1);
-            margin: 1rem 0;
-        }
-
-        .footer-bottom {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding-top: 1rem;
-        }
-
-        .copyright {
-            font-size: 0.8rem;
-            color: rgba(255, 255, 255, 0.6);
-        }
-
-        .footer-social {
-            display: flex;
-            gap: 0.8rem;
-        }
-
-        .footer-social .social-link {
-            width: 32px;
-            height: 32px;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: var(--transition);
-            color: white;
-            font-size: 0.9rem;
-        }
-
-        .footer-social .social-link:hover {
-            background: rgba(255, 255, 255, 0.925);
-            color: var(--primary);
-            transform: translateY(-2px);
-        }
-
-        /* Skip to main content for accessibility */
-        .skip-link {
-            position: absolute;
-            top: -40px;
-            left: 0;
-            background: var(--primary);
-            color: white;
-            padding: 8px;
-            z-index: 1001;
-            text-decoration: none;
-        }
-
-        .skip-link:focus {
-            top: 0;
-        }
-
-        /* Reduce animation complexity on mobile */
-        @media (max-width: 768px) {
-
-            .service-card:hover,
-            .pricing-card:hover,
-            .detail-item:hover,
-            .image-container:hover {
-                transform: none !important;
-            }
-        }
-
-        /* Responsive Design */
-        @media (max-width: 1200px) {
-            .about-content {
-                grid-template-columns: 1fr;
-                gap: 4rem;
-            }
-
-            .image-container {
-                margin: 0 auto;
-            }
-        }
-
-        @media (max-width: 992px) {
-            .contact-content {
-                grid-template-columns: 1fr;
-                gap: 3rem;
-            }
-
-            .contact-info {
-                order: 2;
-            }
-
-            .contact-form {
-                order: 1;
-            }
-
-            .hero-title {
-                font-size: 3.5rem;
-            }
-
-            .section {
-                padding: 80px 0;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .hamburger {
-                display: flex;
-            }
-
-            .nav-menu {
-                position: fixed;
-                top: 90px;
-                left: -100%;
-                background: white;
-                width: 100%;
-                height: calc(100vh - 90px);
-                flex-direction: column;
-                justify-content: flex-start;
-                gap: 2rem;
-                transition: var(--transition);
-                box-shadow: var(--shadow-md);
-                padding: 3rem 2rem;
-            }
-
-            .nav-menu.active {
-                left: 0;
-            }
-
-            .hero-title {
-                font-size: 2.8rem;
-            }
-
-            .hero-subtitle {
-                font-size: 1.5rem;
-            }
-
-            .hero-buttons {
-                flex-direction: column;
-                gap: 1.2rem;
-            }
-
-            .about-details {
-                grid-template-columns: 1fr;
-            }
-
-            .services-grid,
-            .pricing-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .pricing-card.featured {
-                transform: scale(1);
-            }
-
-            .pricing-card.featured:hover {
-                transform: translateY(-10px);
-            }
-
-            .contact-form {
-                padding: 2rem;
-            }
-
-            .image-container {
-                width: 300px;
-                height: 300px;
-                margin-top: 0;
-            }
-
-            .footer-content {
-                flex-direction: column;
-                gap: 1.5rem;
-                text-align: center;
-            }
-
-            .footer-brand {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .footer-contact {
-                text-align: center;
-            }
-
-            .footer-contact-item {
-                justify-content: center;
-            }
-
-            .footer-bottom {
-                flex-direction: column;
-                gap: 1rem;
-            }
-        }
-
-        @media (max-width: 576px) {
-            .section-title {
-                font-size: 2.2rem;
-            }
-
-            .hero-title {
-                font-size: 2.2rem;
-            }
-
-            .hero-subtitle {
-                font-size: 1.2rem;
-            }
-
-            .btn {
-                padding: 14px 28px;
-            }
-
-            .contact-form {
-                padding: 1.5rem;
-            }
-
-            .image-container {
-                width: 260px;
-                height: 260px;
-            }
-
-            .header {
-                width: 90%;
-                padding: 1rem 0;
-            }
-
-            .nav-container {
-                padding: 0 1.5rem;
-            }
-        }
+      :root {
+        --bg: #0b0b0b;
+        --surface: #121212;
+        --gold: #c58e27;
+        --gold-muted: #866d3c;
+        --white: #ffffff;
+        --gray: #999999;
+        --border: rgba(255, 255, 255, 0.08);
+        --transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        --section-padding: 100px; 
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        background-color: var(--bg);
+        color: var(--white);
+        font-family: "Montserrat", sans-serif;
+        line-height: 1.7;
+        overflow-x: hidden;
+        -webkit-font-smoothing: antialiased;
+        cursor: none;
+      }
+
+      h1, h2, h3, h4, .brand {
+        font-family: "Cormorant Garamond", serif;
+        font-weight: 300;
+      }
+
+      .italic { font-style: italic; }
+      .gold-text { color: var(--gold); }
+
+      .container {
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 0 5%;
+      }
+
+      .reveal {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: var(--transition);
+      }
+      .reveal.active {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* --- Navigation --- */
+      nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        padding: 15px 0;
+        z-index: 1000;
+        background: rgba(11, 11, 11, 0.85);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border-bottom: 1px solid var(--border);
+      }
+      .nav-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .brand {
+        font-size: 1.8rem;
+        text-decoration: none;
+        color: var(--white);
+        letter-spacing: 4px;
+        font-weight: 400;
+      }
+      .nav-links {
+        display: flex;
+        gap: 40px;
+        list-style: none;
+        align-items: center;
+      }
+      .nav-links a {
+        color: var(--white);
+        text-decoration: none;
+        font-size: 0.7rem;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        opacity: 0.8;
+        transition: 0.3s;
+      }
+      .nav-links a:hover {
+        opacity: 1;
+        color: var(--gold);
+      }
+
+      /* --- Hero Styling --- */
+      .hero {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        position: relative;
+        background-color: #080808;
+        overflow: hidden;
+        padding-top: 80px; 
+      }
+
+      .hero-bg-accent {
+        position: absolute;
+        top: 20%;
+        right: -5%;
+        width: 500px;
+        height: 500px;
+        background: radial-gradient(circle, rgba(197, 160, 89, 0.12) 0%, transparent 70%);
+        filter: blur(60px);
+        z-index: 1;
+        animation: float 10s infinite alternate;
+      }
+
+      @keyframes float {
+        0% { transform: translate(0, 0); }
+        100% { transform: translate(-50px, 50px); }
+      }
+
+      .hero-content {
+        position: relative;
+        z-index: 10;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 40px;
+        align-items: center;
+      }
+
+      .hero-title {
+        font-size: clamp(3.5rem, 8vw, 6rem);
+        line-height: 0.95;
+        margin: 30px 0 40px;
+        font-weight: 300;
+      }
+
+      .outline-text {
+        background: linear-gradient(180deg, #fcc500 0%, #c59d3f 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-style: italic;
+      }
+
+      .hero-description {
+        font-size: 1.1rem;
+        color: var(--gray);
+        max-width: 480px;
+        line-height: 1.8;
+        margin-bottom: 40px;
+        border-left: 1px solid var(--gold-muted);
+        padding-left: 25px;
+      }
+
+      .hero-cta {
+        display: flex;
+        gap: 20px;
+      }
+
+      .hero-side-info {
+        justify-self: end;
+        text-align: right;
+      }
+
+      .hero-side-info p {
+        font-size: 0.65rem;
+        letter-spacing: 2px;
+        color: var(--gray);
+        margin-bottom: 5px;
+        text-transform: uppercase;
+      }
+
+      .hero-side-info .big-num {
+        font-family: "Cormorant Garamond";
+        font-size: 4rem;
+        color: var(--gold);
+        line-height: 1;
+        margin-bottom: 20px;
+      }
+
+      /* Scroll Indicator */
+      .scroll-container {
+        position: absolute;
+        bottom: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        z-index: 15;
+      }
+
+      .mouse {
+        width: 22px;
+        height: 35px;
+        border: 1px solid var(--gold-muted);
+        border-radius: 20px;
+        position: relative;
+      }
+
+      .wheel {
+        width: 2px;
+        height: 6px;
+        background: var(--gold);
+        position: absolute;
+        top: 6px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 2px;
+        animation: scroll-wheel 1.6s infinite;
+      }
+
+      @keyframes scroll-wheel {
+        0% { opacity: 0; transform: translate(-50%, 0); }
+        30% { opacity: 1; }
+        100% { opacity: 0; transform: translate(-50%, 12px); }
+      }
+
+      /* --- General Section Styling --- */
+      section {
+        padding: var(--section-padding) 0;
+        scroll-margin-top: 80px;
+      }
+
+      .section-label {
+        font-size: 0.7rem;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        color: var(--gold);
+        margin-bottom: 30px;
+        display: block;
+      }
+
+      .btn-primary {
+        background: var(--gold);
+        color: #000;
+        padding: 18px 45px;
+        text-decoration: none;
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        transition: var(--transition);
+        border: 1px solid var(--gold);
+        display: inline-block;
+      }
+
+      .btn-primary:hover {
+        background: transparent;
+        color: var(--gold);
+        transform: translateY(-5px);
+      }
+
+      .btn-glass {
+        background: rgba(255, 255, 255, 0.03);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        color: var(--white);
+        padding: 18px 35px;
+        text-decoration: none;
+        font-size: 0.7rem;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        transition: var(--transition);
+      }
+
+      .btn-glass:hover {
+        background: var(--gold);
+        color: #000;
+        border-color: var(--gold);
+      }
+
+      .about-grid {
+        display: grid;
+        grid-template-columns: 1fr 1.2fr;
+        gap: 100px;
+        align-items: center;
+      }
+      .about-image img {
+        width: 100%;
+        border: 1px solid var(--border);
+        transition: var(--transition);
+      }
+      .about-image img:hover {
+        width: 100%; 
+        filter: grayscale(100%);  
+        border: 1px solid var(--border);
+        transition: var(--transition);
+      }
+
+      .service-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px;
+        border-bottom: 1px solid var(--border);
+        transition: var(--transition);
+      }
+      .service-row:hover {
+        padding-left: 20px;
+        background: rgba(197, 160, 89, 0.03);
+      }
+      .service-row h3 { font-size: 2.8rem; }
+
+      .pricing-flex {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        margin-top: 40px;
+      }
+      .price-card {
+        padding: 60px 40px;
+        border: 1px solid var(--border);
+        background: var(--surface);
+        transition: var(--transition);
+        position: relative; /* Added for badge positioning */
+      }
+
+      /* Recommended Badge Styling */
+      .recommended-badge {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: var(--gold);
+        color: #000;
+        padding: 6px 18px;
+        font-size: 0.6rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        z-index: 10;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+      }
+
+      .contact-grid {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        gap: 120px;
+      }
+
+      /* SOCIAL LINKS STYLING */
+      .social-links {
+        display: flex;
+        gap: 25px;
+        margin-top: 40px;
+      }
+      .social-links a {
+        color: white;
+        font-size: 1.5rem;
+        transition: 0.3s;
+      }
+      .social-links a:hover {
+        color: var(--gold);
+        transform: translateY(-3px);
+      }
+
+      /* CURSOR */
+      .cursor-follower {
+        position: fixed;
+        width: 20px;
+        height: 20px;
+        background: #c59d3f;
+        border-radius: 50%;
+        pointer-events: none;
+        z-index: 9999;
+        mix-blend-mode: difference;
+        box-shadow: 0 0 20px rgba(197, 157, 63, 0.6);
+      }
+      .cursor-follower.expand {
+        width: 50px;
+        height: 50px;
+        background: #ffffff;
+        mix-blend-mode: overlay;
+      }
+
+      @media (max-width: 1024px) {
+        :root { --section-padding: 80px; }
+        .hero-content { grid-template-columns: 1fr; }
+        .hero-side-info { justify-self: start; text-align: left; margin-top: 40px; }
+        .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 60px; }
+        .pricing-flex { grid-template-columns: 1fr; }
+        .nav-links { display: none; }
+      }
+      
+      /* Custom Dropdown Container */
+      .custom-select-wrapper {
+        position: relative;
+        user-select: none;
+        width: 100%;
+      }
+
+      .custom-select {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .custom-select__trigger {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 0;
+        font-size: 0.8rem;
+        font-weight: 300;
+        color: #fff;
+        cursor: pointer;
+        transition: all 0.4s;
+      }
+
+      /* The Gold Chevron */
+      .custom-select__trigger::after {
+        content: '\f078'; /* FontAwesome Chevron Down */
+        font-family: 'Font Awesome 6 Free';
+        font-weight: 900;
+        font-size: 0.6rem;
+        color: var(--gold);
+        transition: transform 0.4s;
+      }
+
+      .custom-select.open .custom-select__trigger::after {
+        transform: rotate(180deg);
+      }
+
+      /* The Options Menu */
+      .custom-options {
+        position: absolute;
+        display: block;
+        top: 100%;
+        left: 0;
+        right: 0;
+        border: 1px solid var(--border);
+        background: #121212; /* Matches your surface color */
+        transition: all 0.4s;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        z-index: 200;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      }
+
+      .custom-select.open .custom-options {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: all;
+        transform: translateY(10px);
+      }
+
+      .custom-option {
+        position: relative;
+        display: block;
+        padding: 15px 20px;
+        font-size: 0.75rem;
+        font-weight: 300;
+        color: var(--gray);
+        cursor: pointer;
+        transition: all 0.3s;
+        border-bottom: 1px solid rgba(255,255,255,0.03);
+      }
+
+      .custom-option:hover {
+        background: rgba(197, 142, 39, 0.1);
+        color: var(--gold);
+        padding-left: 25px;
+      }
+
+      .custom-option.selected {
+        color: var(--gold);
+        background: rgba(197, 142, 39, 0.05);
+      }
+
+      /* --- Custom Scrollbar --- */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: var(--bg);
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: var(--gold);
+        border-radius: 10px;
+        border: 2px solid var(--bg);
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: var(--gold);
+      }
+
+      /* For Firefox */
+      html { 
+        scrollbar-color: var(--gold) var(--bg);
+      }
     </style>
-</head>
+  </head>
 
-<body>
-    <!-- Skip to main content for accessibility -->
-    <a href="#main-content" class="skip-link">Skip to main content</a>
+  <body>
+    <div class="cursor-wrapper">
+      <div class="cursor-follower"></div>
+    </div>
 
-    <!-- Header & Navigation -->
-    <header class="header" id="header" role="banner">
-        <div class="container nav-container">
-            <a href="index.html" aria-label="Home"><img src="assets/img/yklogo.png" alt="Yonatan Kassahun Logo"
-                    class="Logo"></a>
+    <nav>
+      <div class="container nav-content">
+        <a href="#" class="brand">
+          <img src="assets/img/yklogowhite.png" alt="Yk logo" width="50px" />
+        </a>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#pricing">Packages</a></li>
+          <li>
+            <a href="#contact" class="btn-primary" style="padding: 8px 20px; color: #fcc100; background: transparent;">Contact Me</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-            <nav aria-label="Main navigation">
-                <ul class="nav-menu">
-                    <li><a href="#home" class="nav-link">Home</a></li>
-                    <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#services" class="nav-link">Services</a></li>
-                    <li><a href="#pricing" class="nav-link">Packages</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
-                </ul>
-            </nav>
+    <header class="hero">
+      <div class="hero-bg-accent"></div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-main">
+            <a href="https://t.me/Yoni_K" target="_blank" style="color: var(--gold); text-decoration: none; font-size: 0.8rem; letter-spacing: 2px;">
+              AVAILABLE FOR HIRE
+              <i class="fas fa-circle" style="font-size: 0.4rem; margin-left: 5px; vertical-align: middle; animation: blink 1.5s infinite;"></i>
+            </a>
+            <h1 class="hero-title reveal active">
+              Let's build your <br />
+              <span class="outline-text">Online presence.</span>
+            </h1>
+            <p class="hero-description reveal active">
+              I handle the code so you can handle your business.
+            </p>
+            <div class="hero-cta reveal active">
+              <a href="#contact" class="btn-primary">Start a Project</a>
+              <a href="#services" class="btn-glass">What I Offer</a>
+            </div>
+          </div>
 
-            <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
+          <div class="hero-side-info reveal active">
+            <div><p>Strategize & Plan</p><div class="big-num">01.</div></div>
+            <div><p>Website Development</p><div class="big-num">02.</div></div> 
+            <div><p>Publish and Go Live</p><div class="big-num">03.</div></div> 
+          </div>
         </div>
+      </div>
+
+      <a href="#about">
+        <div class="scroll-container reveal active">
+          <div class="mouse"><div class="wheel"></div></div>
+        </div>
+      </a>
     </header>
 
-    <!-- Enhanced Hero Section -->
-    <section id="home" class="hero" role="banner">
-        <div class="container hero-content">
-            <h1 class="hero-title">YONATAN KASSAHUN.</h1>
-            <p class="hero-subtitle">Crafting <span class="typed-text"></span><span class="cursor"
-                    aria-hidden="true">&nbsp;</span>
-                Websites</p>
-            <div class="hero-buttons">
-                <a href="#contact" class="btn btn-primary" style="padding: 10px 70px;">Start a Project</a>
-                <a href="#about" class="btn btn-outline" style="padding: 10px 70px;">Discover My Work</a>
+    <main>
+      <!-- About -->
+      <section id="about">
+        <div class="container">
+          <div class="about-grid">
+            <div class="about-image reveal">
+              <img src="assets/img/a.jpg" alt="Yonatan Kassahun" />
+              <p style="margin-top: 20px; font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); text-align: center;">Yonatan Kassahun</p>
             </div>
+            <div class="about-text reveal">
+              <span class="section-label">Identity</span>
+              <h2 style="font-size: clamp(2.5rem, 5vw, 3.5rem); margin-bottom: 35px">
+                Designing Experiences That <span class="italic">Make an Impact.</span>
+              </h2>
+              <p style="color: var(--gray); font-size: 1.1rem; margin-bottom: 30px">
+               <span class="gold-text">Design the Experience. Build the Foundation. Scale the Business. </span>  
+              </p>
+              <p style="color: var(--gray); margin-bottom: 10px">
+                 " I bridge the gap between a vision and its digital reality. 
+                 <p style="color: var(--gray); margin-bottom: 10px">
+                  Whether we’re launching a personal website, corporate presence or a complex application, I ensure every pixel is intentional and every line of code is optimized to turn your visitors into loyal customers.  <span class="gold-text">  </span>  
+             </p>
+              </p>
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px">
+                <div><span style="font-size: 0.6rem; color: var(--gold); text-transform: uppercase;">Location</span><p>Addis Ababa, ET</p></div>
+                <div><span style="font-size: 0.6rem; color: var(--gold); text-transform: uppercase;">Availability</span><p>Available for Hire</p></div>
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
 
-        <div class="scroll-indicator">
-            <a href="#about"> <span>Explore More</span><br>
-                <i class="fas fa-chevron-down" aria-hidden="true"></i></a>
+      <!-- Services -->
+      <section id="services" style="background: rgba(255, 255, 255, 0.02);">
+        <div class="container">
+          <span class="section-label">Expertise</span>
+          <div class="service-row reveal">
+            <h3>Website Development</h3>
+            <span class="gold-text">Full Stack Solutions</span>
+          </div>
+          <div class="service-row reveal">
+            <h3>SEO & Visibility</h3>
+            <span class="gold-text">Get Found Online</span>
+          </div>
+          <div class="service-row reveal">
+            <h3>Website Maintenance</h3>
+            <span class="gold-text">Fix & Update your Website</span>
+          </div>
+          <div class="service-row reveal">
+            <h3>Mobile Optimization</h3>
+            <span class="gold-text">Responsive Architecture</span>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <main id="main-content" role="main">
-        <!-- About Section -->
-        <section id="about" class="section about">
-            <div class="container">
-                <h2 class="section-title">About Me</h2>
-                <p class="section-description">A dedicated UI/UX designer and developer passionate about creating
-                    exceptional digital experiences</p>
-
-                <div class="about-content">
-                    <div class="about-image" style="margin-top: 120px;">
-                        <div class="image-container">
-                            <img src="assets/img/a.jpg" alt="Yonatan Kassahun - UI/UX Designer & Web Developer"
-                                loading="lazy">
-                            <div class="image-border" aria-hidden="true"></div>
-                        </div>
-                    </div>
-
-                    <div class="about-text">
-                        <h2>Designing Experiences That Make an Impact</h2>
-                        <p>I'm a <span class="highlight">UI/UX designer and full-stack developer</span> located in Addis
-                            Ababa, Ethiopia. I specialize in creating digital experiences that combine beautiful design
-                            with
-                            great functionality.</p>
-
-                        <p>With skills in both design and development, I look at projects from a complete viewpoint.
-                            This
-                            way, I ensure that every part—from the user interface to the underlying code—works well
-                            together
-                            to produce outstanding results.</p>
-
-                        <div class="about-details">
-                            <div class="detail-item">
-                                <div class="detail-icon" aria-hidden="true">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                </div>
-                                <div class="detail-content">
-                                    <strong>Location</strong>
-                                    <span>Addis Ababa, Ethiopia</span>
-                                </div>
-                            </div>
-
-                            <div class="detail-item">
-                                <div class="detail-icon" aria-hidden="true">
-                                    <i class="fas fa-envelope"></i>
-                                </div>
-                                <div class="detail-content">
-                                    <strong>Email</strong>
-                                    <span>yonsbreak7@gmail.com</span>
-                                </div>
-                            </div>
-
-                            <div class="detail-item">
-                                <div class="detail-icon" aria-hidden="true">
-                                    <i class="fas fa-briefcase"></i>
-                                </div>
-                                <div class="detail-content">
-                                    <strong>Availability</strong>
-                                    <span>Freelance Projects</span>
-                                </div>
-                            </div>
-
-                            <div class="detail-item">
-                                <div class="detail-icon" aria-hidden="true">
-                                    <i class="fas fa-clock"></i>
-                                </div>
-                                <div class="detail-content">
-                                    <strong>Response Time</strong>
-                                    <span>Within 24 Hours</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="skills-section">
-                            <h3>Core Expertise</h3>
-                            <div class="skills-list">
-                                <span class="skill-tag"><i class="fas fa-pencil-alt" aria-hidden="true"></i> UI/UX
-                                    Design</span>
-                                <span class="skill-tag"><i class="fas fa-code" aria-hidden="true"></i> Web
-                                    Development</span>
-                                <span class="skill-tag"><i class="fab fa-html5" aria-hidden="true"></i> HTML/CSS</span>
-                                <span class="skill-tag"><i class="fab fa-js" aria-hidden="true"></i> JavaScript</span>
-                                <span class="skill-tag"><i class="fas fa-mobile-alt" aria-hidden="true"></i> Responsive
-                                    Design</span>
-                                <span class="skill-tag"><i class="fas fa-tools" aria-hidden="true"></i> Web
-                                    Maintenance</span>
-                                <span class="skill-tag"><i class="fas fa-search" aria-hidden="true"></i> SEO
-                                    Optimization</span>
-                                <span class="skill-tag"><i class="fas fa-tasks" aria-hidden="true"></i> Project
-                                    Management</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <!-- Packages -->
+      <section id="pricing">
+        <div class="container">
+          <span class="section-label">Investment</span>
+          <div class="pricing-flex">
+            <!-- BASIC -->
+            <div class="price-card reveal">
+              <h4 style="font-size: 1.8rem; margin-bottom: 20px">Basic Web</h4>
+              <ul style="list-style: none; margin-bottom: 40px; color: var(--gray); font-size: 0.9rem;">
+                <li style="margin-bottom: 12px"><i class="fas fa-check gold-text"></i> Custom Static Website</li>
+                <li style="margin-bottom: 12px"><i class="fas fa-check gold-text"></i> 30-day Full-time support</li>
+                <li style="margin-bottom: 12px"><i class="fas fa-check gold-text"></i> SSL certificate</li>
+                <li style="margin-bottom: 12px"><i class="fas fa-check gold-text"></i> One-time maintenance</li>
+                <li style="margin-bottom: 12px"><i class="fas fa-check gold-text"></i> Project guidance</li>
+                <li style="margin-bottom: 12px"><i class="fas fa-x" style="color: #ff4d4d; font-size: 10px;"></i> Hosting & domain assistance</li>
+                <li style="margin-bottom: 12px"><i class="fas fa-x" style="color: #ff4d4d; font-size: 10px;"></i> Database</li>
+              </ul>
+              <a href="#contact" class="btn-primary" style="width: 100%; text-align: center" onclick="selectPackage('Basic Web')">Inquire</a>
             </div>
-        </section>
 
-        <!-- Services Section -->
-        <section id="services" class="section services">
-            <div class="container">
-                <h2 class="section-title">My Services</h2>
-                <p class="section-description">Comprehensive web solutions to bring your digital vision to life</p>
-
-                <div class="services-grid">
-                    <div class="service-card">
-                        <div class="service-icon" aria-hidden="true">
-                            <i class="fas fa-laptop-code"></i>
-                        </div>
-                        <h3>Web Design & Development</h3>
-                        <p>Custom websites built with modern technologies, focusing on aesthetics, functionality, and
-                            user
-                            experience.</p>
-                    </div>
-
-                    <div class="service-card">
-                        <div class="service-icon" aria-hidden="true">
-                            <i class="fas fa-mobile-alt"></i>
-                        </div>
-                        <h3>Responsive Development</h3>
-                        <p>Websites that work flawlessly on all devices, from desktops to smartphones, with adaptive
-                            layouts.</p>
-                    </div>
-
-                    <div class="service-card">
-                        <div class="service-icon" aria-hidden="true">
-                            <i class="fas fa-tools"></i>
-                        </div>
-                        <h3>Website Maintenance</h3>
-                        <p>Ongoing support, updates, and maintenance to keep your website secure and up-to-date.</p>
-                    </div>
-
-                    <div class="service-card">
-                        <div class="service-icon" aria-hidden="true">
-                            <i class="fas fa-cogs"></i>
-                        </div>
-                        <h3>API Development</h3>
-                        <p>Building robust and scalable APIs to connect your applications and enhance functionality.</p>
-                    </div>
-
-                    <div class="service-card">
-                        <div class="service-icon" aria-hidden="true">
-                            <i class="fas fa-search"></i>
-                        </div>
-                        <h3>SEO Optimization</h3>
-                        <p>Improve your website's visibility with search engine optimization techniques and best
-                            practices.
-                        </p>
-                    </div>
-
-                    <div class="service-card">
-                        <div class="service-icon" aria-hidden="true">
-                            <i class="fas fa-paint-brush"></i>
-                        </div>
-                        <h3>UI/UX Design</h3>
-                        <p>User-centered design approach creating intuitive interfaces and engaging user experiences.
-                        </p>
-                    </div>
-                </div>
+            <!-- PRO SITE PLUS (RECOMMENDED) -->
+            <div class="price-card reveal" style="border-color: var(--gold);"> 
+              <div class="recommended-badge">Recommended</div>
+              <h4 style="font-size: 1.8rem; margin-bottom: 20px">ProSite Plus</h4>
+              <ul style="list-style: none; margin-bottom: 40px; color: var(--gray); font-size: 0.9rem;">
+                <li style="margin-bottom: 12px"><i class="fas fa-check gold-text"></i> Dynamic website</li>
+                <li style="margin-bottom: 12px"><i class="fas fa-check gold-text"></i> 60-day Full-time support</li>
+                <li style="margin-bottom: 12px"><i class="fas fa-check gold-text"></i> SSL certificate</li>
+                <li style="margin-bottom: 12px"><i class="fas fa-check gold-text"></i> Monthly maintenance</li>
+                <li style="margin-bottom: 12px"><i class="fas fa-check gold-text"></i> Project guidance</li>
+                <li style="margin-bottom: 12px"><i class="fas fa-check gold-text"></i> Hosting & domain assistance</li>
+                <li style="margin-bottom: 12px"><i class="fas fa-check gold-text"></i> Database Included</li> 
+              </ul>
+              <a href="#contact" class="btn-primary" style="width: 100%; text-align: center" onclick="selectPackage('ProSite Plus')">Inquire</a>
             </div>
-        </section>
 
-        <!-- Pricing Section -->
-        <section id="pricing" class="section pricing">
-            <div class="container">
-                <h2 class="section-title">Package plans</h2>
-                <p class="section-description">Empower Your Online Presence with Affordable Excellence!</p>
-
-                <div class="pricing-grid">
-                    <div class="pricing-card">
-                        <div class="pricing-header">
-                            <h3>Basic Web</h3>
-                            <!-- <div class="price">18,000<span>Birr</span></div> -->
-                        </div>
-                        <ul class="pricing-features">
-                            <li><i class="fas fa-check" aria-hidden="true"></i> Static website</li>
-                            <li><i class="fas fa-check" aria-hidden="true"></i> 30-day Full-time support</li>
-                            <li><i class="fas fa-check" aria-hidden="true"></i> SSL certificate</li>
-                            <li><i class="fas fa-check" aria-hidden="true"></i> One-time maintenance</li>
-                            <li><i class="fas fa-check" aria-hidden="true"></i> Project guidance</li>
-                            <li><i class="fas fa-times" aria-hidden="true"></i> Hosting & domain assistance</li>
-                            <li><i class="fas fa-times" aria-hidden="true"></i> Database</li>
-                        </ul>
-                        <a href="#contact" class="btn-pricing" data-package="Basic Web">Order Now</a>
-                    </div>
-
-                    <div class="pricing-card featured">
-                        <div class="popular-badge" aria-hidden="true">RECOMMENDED</div>
-                        <div class="pricing-header">
-                            <h3>ProSite Plus</h3>
-                            <!-- <div class="price">25,000<span>Birr</span></div> -->
-                        </div>
-                        <ul class="pricing-features">
-                            <li><i class="fas fa-check" aria-hidden="true"></i> Dynamic website</li>
-                            <li><i class="fas fa-check" aria-hidden="true"></i> 60-day Full-time support</li>
-                            <li><i class="fas fa-check" aria-hidden="true"></i> SSL certificate</li>
-                            <li><i class="fas fa-check" aria-hidden="true"></i> Monthly maintenance</li>
-                            <li><i class="fas fa-check" aria-hidden="true"></i> Project guidance</li>
-                            <li><i class="fas fa-check" aria-hidden="true"></i> Hosting & domain assistance</li>
-                            <li><i class="fas fa-check" aria-hidden="true"></i> Database Included</li>
-                        </ul>
-                        <a href="#contact" class="btn-pricing" data-package="ProSite Plus">Order Now</a>
-                    </div>
-
-                    <div class="pricing-card">
-                        <div class="pricing-header">
-                            <h3>Premium Web <i class="fas fa-crown" aria-hidden="true"></i></h3>
-                            <!-- <div class="price">45,000<span>Birr</span></div> -->
-                        </div>
-                        <ul class="pricing-features">
-                            <li><i class="fas fa-check" aria-hidden="true"></i> Dynamic & highly appealing website</li>
-                            <li><i class="fas fa-check" aria-hidden="true"></i> Lifetime support</li>
-                            <li><i class="fas fa-check" aria-hidden="true"></i> SSL certificate</li>
-                            <li><i class="fas fa-check" aria-hidden="true"></i> 24/7 Maintenance</li>
-                            <li><i class="fas fa-check" aria-hidden="true"></i> Database Integration</li>
-                            <li><i class="fas fa-check" aria-hidden="true"></i> Expert project guidance</li>
-                            <li><i class="fas fa-check" aria-hidden="true"></i> Hosting & domain assistance</li>
-                            <li><i class="fas fa-check" aria-hidden="true"></i> Major Backups</li>
-                            <li><i class="fas fa-check" aria-hidden="true"></i> Payment Integration</li>
-                            <li><i class="fas fa-check" aria-hidden="true"></i> Admin Panel</li>
-                        </ul>
-                        <a href="#contact" class="btn-pricing" data-package="Premium Web">Order Now</a>
-                    </div>
-                </div>
+            <!-- PREMIUM -->
+            <div class="price-card reveal">
+              <h4 style="font-size: 1.8rem; margin-bottom: 20px">Premium</h4>
+              <ul style="list-style: none; margin-bottom: 40px; color: var(--gray); font-size: 0.9rem;">
+                <li style="margin-bottom: 12px"><i class="fas fa-check gold-text"></i> Dynamic & highly appealing website</li>
+                <li style="margin-bottom: 12px"><i class="fas fa-check gold-text"></i> Lifetime support </li>
+                <li style="margin-bottom: 12px"><i class="fas fa-check gold-text"></i> SSL certificate</li>
+                <li style="margin-bottom: 12px"><i class="fas fa-check gold-text"></i> Weekly Maintenance </li>
+                <li style="margin-bottom: 12px"><i class="fas fa-check gold-text"></i> Expert project guidance </li>
+                <li style="margin-bottom: 12px"><i class="fas fa-check gold-text"></i> Hosting & domain assistance</li>
+                <li style="margin-bottom: 12px"><i class="fas fa-check gold-text"></i> Database Included</li>
+                <li style="margin-bottom: 12px"><i class="fas fa-check gold-text"></i> Payment Integration</li>
+                <li style="margin-bottom: 12px"><i class="fas fa-check gold-text"></i> Major Backups</li>
+                <li style="margin-bottom: 12px"><i class="fas fa-check gold-text"></i> Administrator Panel</li>
+              </ul>
+              <a href="#contact" class="btn-primary" style="width: 100%; text-align: center" onclick="selectPackage('Premium Web')">Inquire</a>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="section contact">
-            <div class="container">
-                <h2 class="section-title">Get In Touch</h2>
-                <p class="section-description">Ready to start your project? Reach out to me today!</p>
+      <!-- Contact -->
+      <section id="contact" style="margin-top: -80px;">
+        <div class="container">
+          <div class="contact-grid">
+            <div class="contact-info reveal">
+              <span class="section-label">Collaboration</span>
+              <h2 style="font-size: 3.5rem; line-height: 1.1; margin-bottom: 20px">
+                Let's have a<br /><span class="italic">Conversation.</span>
+              </h2>
+              <div style="margin-bottom: 30px">
+                <span class="gold-text" style="font-size: 0.6rem; letter-spacing: 2px">EMAIL</span>
+                <p style="font-size: 1.2rem">yonsbreak7@gmail.com</p>
+              </div>
+              <div style="margin-bottom: 30px">
+                <span class="gold-text" style="font-size: 0.6rem; letter-spacing: 2px">PHONE</span>
+                <p style="font-size: 1.2rem">+251-967-28-56-00</p>
+              </div>
 
-                <div class="contact-content">
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <div class="contact-icon" aria-hidden="true">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h3>Location</h3>
-                                <p>Alembank, Addis Ababa, Ethiopia</p>
-                            </div>
-                        </div>
-
-                        <div class="contact-item">
-                            <div class="contact-icon" aria-hidden="true">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h3>Email</h3>
-                                <p>yonsbreak7@gmail.com</p>
-                            </div>
-                        </div>
-
-                        <div class="contact-item">
-                            <div class="contact-icon" aria-hidden="true">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h3>Call</h3>
-                                <p>+2519-67-28-56-00</p>
-                            </div>
-                        </div>
-
-                        <div class="social-links">
-                            <a href="https://t.me/Yoni_K" target="_blank" class="social-link" aria-label="Telegram">
-                                <i class="fab fa-telegram" aria-hidden="true"></i>
-                            </a>
-                            <a href="https://www.facebook.com/profile.php?id=100006299029078" target="_blank"
-                                class="social-link" aria-label="Facebook">
-                                <i class="fab fa-facebook-f" aria-hidden="true"></i>
-                            </a>
-                            <a href="https://www.instagram.com/yoninani7/" target="_blank" class="social-link"
-                                aria-label="Instagram">
-                                <i class="fab fa-instagram" aria-hidden="true"></i>
-                            </a>
-                            <a href="https://wa.me/qr/DAASMBETWYIHJ1" target="_blank" class="social-link"
-                                aria-label="WhatsApp">
-                                <i class="fab fa-whatsapp" aria-hidden="true"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="contact-form">
-                        <form action="https://formspree.io/f/mayggdqa" method="POST" id="projectForm">
-                            <input type="hidden" name="selected_package" id="selectedPackage">
-
-                            <div class="form-group">
-                                <label for="name">Your Name</label>
-                                <input type="text" name="name" id="name" required>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="email">Your Email</label>
-                                <input type="email" name="email" id="email" required>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="phone">Your Phone</label>
-                                <input type="text" name="phone" id="phone" required>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="packageSelect">Select a Package</label>
-                                <select name="package" id="packageSelect" required>
-                                    <option value="">Choose an option</option>
-                                    <option value="Basic Web">Basic Web - 18,000 Birr</option>
-                                    <option value="ProSite Plus">ProSite Plus - 25,000 Birr</option>
-                                    <option value="Premium Web">Premium Web - 45,000 Birr</option>
-                                </select>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="message">Your Message</label>
-                                <textarea style="resize: none;" name="message" id="message" rows="5"
-                                    required></textarea>
-                            </div>
-
-                            <button type="submit" class="btn btn-primary">Send Message</button>
-
-                        </form>
-                    </div>
-                </div>
+              <div class="social-links">
+                <a href="https://t.me/Yoni_K" target="_blank"><i class="fab fa-telegram"></i></a>
+                <a href="https://www.instagram.com/yoninani7/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/qr/DAASMBETWYIHJ1" target="_blank"><i class="fab fa-whatsapp"></i></a>
+              </div>
             </div>
-        </section>
+
+            <div class="contact-form reveal">
+              <form action="https://formspree.io/f/mayggdqa" method="POST">
+                <div style="margin-bottom: 30px">
+                  <label style="display: block; font-size: 0.6rem; color: var(--gray); text-transform: uppercase; margin-bottom: 10px;">Name</label>
+                  <input type="text" name="name" required style="width: 100%; background: transparent; border: none; border-bottom: 1px solid var(--border); padding: 15px 0; color: white; outline: none;" />
+                </div>
+                <div style="margin-bottom: 30px">
+                  <label style="display: block; font-size: 0.6rem; color: var(--gray); text-transform: uppercase; margin-bottom: 10px;">Email</label>
+                  <input type="email" name="email" required style="width: 100%; background: transparent; border: none; border-bottom: 1px solid var(--border); padding: 15px 0; color: white; outline: none;" />
+                </div>
+                <div style="margin-bottom: 30px">
+                  <label style="display: block; font-size: 0.6rem; color: var(--gray); text-transform: uppercase; margin-bottom: 10px;">Package Choice</label>
+                  <div class="custom-select-wrapper">
+                    <div class="custom-select" id="packageDropdown">
+                      <div class="custom-select__trigger">
+                        <span id="selectedText">Choose a package</span>
+                      </div>
+                      <div class="custom-options">
+                        <span class="custom-option" data-value="Basic Web">Basic Web</span>
+                        <span class="custom-option" data-value="ProSite Plus">ProSite Plus</span>
+                        <span class="custom-option" data-value="Premium Web">Premium Web</span>
+                      </div>
+                    </div>
+                    <input type="hidden" name="package" id="packageHiddenInput" required>
+                  </div>
+                </div>
+                <div style="margin-bottom: 30px">
+                  <label style="display: block; font-size: 0.6rem; color: var(--gray); text-transform: uppercase; margin-bottom: 10px;">Message</label>
+                  <textarea name="message" rows="5" placeholder="What do you have in mind ?" required style="width: 100%; background: transparent; border: 1px solid var(--border); padding: 15px; color: white; outline: none; resize: none;"></textarea>
+                </div>
+                <button type="submit" class="btn-primary" style="width: 100%; border: none; cursor: pointer; margin-top: 10px;">Send Inquiry</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <!-- Footer Section -->
-    <footer class="compact-footer" role="contentinfo">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <a href="index.html" aria-label="Home">
-                        <img src="assets/img/yklogo.png" alt="Yonatan Kassahun Logo" class="footer-logo" loading="lazy">
-                    </a>
-                    <div class="brand-text">
-                        <div>Yonatan Kassahun</div>
-                        <div class="footer-tagline">UI/UX Designer & Developer</div>
-                    </div>
-                </div>
-
-                <div class="footer-contact">
-                    <div class="footer-contact-item">
-                        <i class="fas fa-envelope" aria-hidden="true"></i>
-                        <span>yonsbreak7@gmail.com</span>
-                    </div>
-                    <div class="footer-contact-item">
-                        <i class="fas fa-phone" aria-hidden="true"></i>
-                        <span>+2519-67-28-56-00</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer-divider" aria-hidden="true"></div>
-
-            <div class="footer-bottom">
-                <div class="copyright">
-                    &copy; 2023 Yonatan Kassahun. All rights reserved.
-                </div>
-
-                <div class="footer-social">
-                    <a href="https://t.me/Yoni_K" target="_blank" class="social-link" aria-label="Telegram">
-                        <i class="fab fa-telegram" aria-hidden="true"></i>
-                    </a>
-                    <a href="https://www.facebook.com/profile.php?id=100006299029078" target="_blank"
-                        class="social-link" aria-label="Facebook">
-                        <i class="fab fa-facebook-f" aria-hidden="true"></i>
-                    </a>
-                    <a href="https://www.instagram.com/yoninani7/" target="_blank" class="social-link"
-                        aria-label="Instagram">
-                        <i class="fab fa-instagram" aria-hidden="true"></i>
-                    </a>
-                    <a href="https://wa.me/qr/DAASMBETWYIHJ1" target="_blank" class="social-link" aria-label="WhatsApp">
-                        <i class="fab fa-whatsapp" aria-hidden="true"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
+    <footer class="container" style="padding: 60px 0; border-top: 1px solid var(--border); display: flex; justify-content: space-between; font-size: 0.6rem; color: var(--gray); letter-spacing: 2px;">
+      <div>© 2026 YONATAN KASSAHUN</div>
+      <div>ALL RIGHTS RESERVED</div>
     </footer>
 
     <script>
-        // Optimized navigation functionality
-        const header = document.getElementById('header');
-        const hamburger = document.querySelector('.hamburger');
-        const navMenu = document.querySelector('.nav-menu');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) entry.target.classList.add("active");
+        });
+      }, { threshold: 0.1 });
 
-        // Optimized smooth scrolling function
-        function smoothScrollTo(targetElement) {
-            const targetPosition = targetElement.offsetTop - 100;
-            const startPosition = window.pageYOffset;
-            const distance = targetPosition - startPosition;
+      document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
 
-            // For very short distances, use instant scroll
-            if (Math.abs(distance) < 200) {
-                window.scrollTo(0, targetPosition);
-                return;
-            }
+      const cursor = document.querySelector(".cursor-follower");
+      let mouseX = 0, mouseY = 0, cursorX = 0, cursorY = 0;
 
-            const duration = Math.min(600, Math.abs(distance) * 0.6);
-            let startTime = null;
+      window.addEventListener("mousemove", (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+      });
 
-            function animation(currentTime) {
-                if (startTime === null) startTime = currentTime;
-                const timeElapsed = currentTime - startTime;
-                const progress = Math.min(timeElapsed / duration, 1);
+      function animate() {
+        cursorX += (mouseX - cursorX) * 0.15;
+        cursorY += (mouseY - cursorY) * 0.15;
+        cursor.style.transform = `translate3d(${cursorX - cursor.offsetWidth / 2}px, ${cursorY - cursor.offsetHeight / 2}px, 0)`;
+        requestAnimationFrame(animate);
+      }
+      animate();
 
-                // Simple ease-out function
-                const ease = 1 - Math.pow(1 - progress, 3);
+      document.querySelectorAll("a, button, .custom-select__trigger, .custom-option, input, textarea").forEach((link) => {
+        link.addEventListener("mouseenter", () => cursor.classList.add("expand"));
+        link.addEventListener("mouseleave", () => cursor.classList.remove("expand"));
+      });
 
-                window.scrollTo(0, startPosition + distance * ease);
+      // Custom Dropdown logic
+      const dropdown = document.getElementById('packageDropdown');
+      const hiddenInput = document.getElementById('packageHiddenInput');
+      const selectedText = document.getElementById('selectedText');
 
-                if (timeElapsed < duration) {
-                    requestAnimationFrame(animation);
-                }
-            }
+      dropdown.addEventListener('click', function() {
+        this.classList.toggle('open');
+      });
 
-            requestAnimationFrame(animation);
+      document.querySelectorAll('.custom-option').forEach(option => {
+        option.addEventListener('click', function() {
+          const val = this.getAttribute('data-value');
+          const text = this.textContent;
+          selectedText.textContent = text;
+          hiddenInput.value = val;
+          document.querySelectorAll('.custom-option').forEach(el => el.classList.remove('selected'));
+          this.classList.add('selected');
+        });
+      });
+
+      window.addEventListener('click', function(e) {
+        if (!dropdown.contains(e.target)) {
+          dropdown.classList.remove('open');
         }
+      });
 
-        // Toggle menu function
-        function toggleMenu() {
-            hamburger.classList.toggle('active');
-            navMenu.classList.toggle('active');
-            hamburger.setAttribute('aria-expanded', hamburger.classList.contains('active'));
-
-            if (navMenu.classList.contains('active')) {
-                document.body.style.overflow = 'hidden';
-            } else {
-                document.body.style.overflow = 'auto';
-            }
-        }
-
-        // Hamburger click event
-        hamburger.addEventListener('click', toggleMenu);
-
-        // Optimized navigation click handler
-        document.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', (e) => {
-                e.preventDefault();
-                const targetId = link.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-
-                if (targetElement) {
-                    // Immediately close menu
-                    if (navMenu.classList.contains('active')) {
-                        toggleMenu();
-                    }
-
-                    // Start smooth scroll
-                    smoothScrollTo(targetElement);
-                }
-            });
+      function selectPackage(val) {
+        hiddenInput.value = val;
+        selectedText.textContent = val;
+        document.querySelectorAll('.custom-option').forEach(opt => {
+          if(opt.getAttribute('data-value') === val) {
+            opt.classList.add('selected');
+          } else {
+            opt.classList.remove('selected');
+          }
         });
-
-        // Close menu when clicking outside
-        document.addEventListener('click', (e) => {
-            if (!hamburger.contains(e.target) && !navMenu.contains(e.target) && navMenu.classList.contains('active')) {
-                toggleMenu();
-            }
-        });
-
-        // Debounced scroll function
-        function debounce(func, wait) {
-            let timeout;
-            return function executedFunction(...args) {
-                const later = () => {
-                    clearTimeout(timeout);
-                    func(...args);
-                };
-                clearTimeout(timeout);
-                timeout = setTimeout(later, wait);
-            };
-        }
-
-        // Optimized scroll effect for header
-        window.addEventListener('scroll', debounce(function () {
-            if (window.scrollY > 50) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-        }, 10));
-
-        // Typing animation
-        document.addEventListener('DOMContentLoaded', function () {
-            const typedTextSpan = document.querySelector('.typed-text');
-            const cursorSpan = document.querySelector('.cursor');
-
-            const textArray = ["Engaging", "Innovative", "Responsive", "Modern", "Elegant"];
-            const typingDelay = 100;
-            const erasingDelay = 100;
-            const newTextDelay = 200;
-            let textArrayIndex = 0;
-            let charIndex = 0;
-
-            function type() {
-                if (charIndex < textArray[textArrayIndex].length) {
-                    if (!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
-                    typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
-                    charIndex++;
-                    setTimeout(type, typingDelay);
-                }
-                else {
-                    cursorSpan.classList.remove("typing");
-                    setTimeout(erase, newTextDelay);
-                }
-            }
-
-            function erase() {
-                if (charIndex > 0) {
-                    if (!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
-                    typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
-                    charIndex--;
-                    setTimeout(erase, erasingDelay);
-                }
-                else {
-                    cursorSpan.classList.remove("typing");
-                    textArrayIndex++;
-                    if (textArrayIndex >= textArray.length) textArrayIndex = 0;
-                    setTimeout(type, typingDelay + 1100);
-                }
-            }
-
-            // Start the typing animation on load
-            if (textArray.length) setTimeout(type, newTextDelay + 250);
-
-            // Initialize scroll animations
-            window.addEventListener('scroll', animateOnScroll);
-            animateOnScroll(); // Initial check
-        });
-
-        // Enhanced smooth scrolling for all anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-
-                const targetId = this.getAttribute('href');
-                if (targetId === '#') return;
-
-                const targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    smoothScrollTo(targetElement);
-                }
-            });
-        });
-
-        // Package selection functionality
-        document.querySelectorAll('.btn-pricing').forEach(button => {
-            button.addEventListener('click', function (e) {
-                e.preventDefault();
-                const packageName = this.getAttribute('data-package');
-
-                // Set the selected package in the form
-                document.getElementById('selectedPackage').value = packageName;
-                document.getElementById('packageSelect').value = packageName;
-
-                // Scroll to the contact form
-                const contactSection = document.getElementById('contact');
-                if (contactSection) {
-                    smoothScrollTo(contactSection);
-                }
-            });
-        });
-
-        // Form submission handling
-        document.getElementById('projectForm').addEventListener('submit', function (e) {
-            e.preventDefault();
-
-            // Basic validation
-            const packageSelect = document.getElementById('packageSelect');
-            if (!packageSelect.value) {
-                alert('Please select a package');
-                packageSelect.focus();
-                return;
-            }
-            // If validation passes, submit the form
-            this.submit();
-        });
-
-        // Scroll animations
-        function animateOnScroll() {
-            const elements = document.querySelectorAll('.service-card, .pricing-card, .detail-item');
-
-            elements.forEach(element => {
-                const position = element.getBoundingClientRect();
-
-                if (position.top < window.innerHeight - 100) {
-                    element.style.opacity = 1;
-                    element.style.transform = 'translateY(0)';
-                }
-            });
-        }
-
-        // Set initial state for animated elements
-        document.querySelectorAll('.service-card, .pricing-card, .detail-item').forEach(element => {
-            element.style.opacity = 0;
-            element.style.transform = 'translateY(50px)';
-            element.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
-        });
-
-        // Add loading state for better UX
-        document.addEventListener('DOMContentLoaded', function () {
-            document.body.classList.add('loaded');
-        });
+        document.getElementById('contact').scrollIntoView();
+      }
     </script>
-</body>
-
+  </body>
 </html>
