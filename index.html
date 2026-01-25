@@ -220,7 +220,7 @@
         margin-bottom: 20px;
       }
 
-      /* Scroll Indicator */
+      /* Scroll Indicator Logic */
       .scroll-container {
         position: absolute;
         bottom: 40px;
@@ -232,6 +232,7 @@
         gap: 12px;
         z-index: 15;
       }
+ 
 
       .mouse {
         width: 22px;
@@ -356,7 +357,7 @@
         border: 1px solid var(--border);
         background: var(--surface);
         transition: var(--transition);
-        position: relative; /* Added for badge positioning */
+        position: relative; 
       }
 
       /* Recommended Badge Styling */
@@ -417,13 +418,38 @@
         mix-blend-mode: overlay;
       }
 
+      /* --- RESPONSIBILITY OVERRIDES --- */
       @media (max-width: 1024px) {
         :root { --section-padding: 80px; }
         .hero-content { grid-template-columns: 1fr; }
-        .hero-side-info { justify-self: start; text-align: left; margin-top: 40px; }
+        .hero-side-info { 
+            justify-self: start; 
+            text-align: left; 
+            margin-top: 40px; 
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        .hero-side-info .big-num { font-size: 3rem; margin-bottom: 10px; }
         .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 60px; }
         .pricing-flex { grid-template-columns: 1fr; }
         .nav-links { display: none; }
+         .scroll-container {
+          display: none;
+        }
+      }
+
+      @media (max-width: 768px) {
+        body { cursor: default; }
+        .cursor-follower { display: none; }
+        .service-row { flex-direction: column; align-items: flex-start; gap: 10px; padding: 30px 20px; }
+        .service-row h3 { font-size: 2rem; }
+      }
+
+      @media (max-width: 480px) {
+        .hero-cta { flex-direction: column; }
+        .btn-primary, .btn-glass { text-align: center; width: 100%; }
+        .hero-title { font-size: 3.2rem; }
       }
       
       /* Custom Dropdown Container */
@@ -453,9 +479,8 @@
         transition: all 0.4s;
       }
 
-      /* The Gold Chevron */
       .custom-select__trigger::after {
-        content: '\f078'; /* FontAwesome Chevron Down */
+        content: '\f078';
         font-family: 'Font Awesome 6 Free';
         font-weight: 900;
         font-size: 0.6rem;
@@ -467,7 +492,6 @@
         transform: rotate(180deg);
       }
 
-      /* The Options Menu */
       .custom-options {
         position: absolute;
         display: block;
@@ -475,7 +499,7 @@
         left: 0;
         right: 0;
         border: 1px solid var(--border);
-        background: #121212; /* Matches your surface color */
+        background: #121212; 
         transition: all 0.4s;
         opacity: 0;
         visibility: hidden;
@@ -514,29 +538,10 @@
         background: rgba(197, 142, 39, 0.05);
       }
 
-      /* --- Custom Scrollbar --- */
-      ::-webkit-scrollbar {
-        width: 8px;
-      }
-
-      ::-webkit-scrollbar-track {
-        background: var(--bg);
-      }
-
-      ::-webkit-scrollbar-thumb {
-        background: var(--gold);
-        border-radius: 10px;
-        border: 2px solid var(--bg);
-      }
-
-      ::-webkit-scrollbar-thumb:hover {
-        background: var(--gold);
-      }
-
-      /* For Firefox */
-      html { 
-        scrollbar-color: var(--gold) var(--bg);
-      }
+      ::-webkit-scrollbar { width: 8px; }
+      ::-webkit-scrollbar-track { background: var(--bg); }
+      ::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 10px; border: 2px solid var(--bg); }
+      html { scrollbar-color: var(--gold) var(--bg); }
     </style>
   </head>
 
@@ -605,7 +610,7 @@
           <div class="about-grid">
             <div class="about-image reveal">
               <img src="assets/img/a.jpg" alt="Yonatan Kassahun" />
-              <p style="margin-top: 20px; font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); text-align: center;">Yonatan Kassahun</p>
+              <p style="margin-top: 20px; font-family: 'Cormorant Garamond', serif; font-size: 1.8rem;font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); text-align: center;">Yonatan Kassahun.</p>
             </div>
             <div class="about-text reveal">
               <span class="section-label">Identity</span>
@@ -613,7 +618,7 @@
                 Designing Experiences That <span class="italic">Make an Impact.</span>
               </h2>
               <p style="color: var(--gray); font-size: 1.1rem; margin-bottom: 30px">
-               <span class="gold-text">Design the Experience. Build the Foundation. Scale the Business. </span>  
+               <span class="gold-text">Creating the Experience. Build the Foundation. Scale the Business. </span>  
               </p>
               <p style="color: var(--gray); margin-bottom: 10px">
                  " I bridge the gap between a vision and its digital reality. 
@@ -673,7 +678,7 @@
               <a href="#contact" class="btn-primary" style="width: 100%; text-align: center" onclick="selectPackage('Basic Web')">Inquire</a>
             </div>
 
-            <!-- PRO SITE PLUS (RECOMMENDED) -->
+            <!-- PRO SITE PLUS -->
             <div class="price-card reveal" style="border-color: var(--gold);"> 
               <div class="recommended-badge">Recommended</div>
               <h4 style="font-size: 1.8rem; margin-bottom: 20px">ProSite Plus</h4>
@@ -790,23 +795,26 @@
       const cursor = document.querySelector(".cursor-follower");
       let mouseX = 0, mouseY = 0, cursorX = 0, cursorY = 0;
 
-      window.addEventListener("mousemove", (e) => {
-        mouseX = e.clientX;
-        mouseY = e.clientY;
-      });
+      // Only run cursor if it's not a touch device
+      if (window.matchMedia("(pointer: fine)").matches) {
+          window.addEventListener("mousemove", (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+          });
 
-      function animate() {
-        cursorX += (mouseX - cursorX) * 0.15;
-        cursorY += (mouseY - cursorY) * 0.15;
-        cursor.style.transform = `translate3d(${cursorX - cursor.offsetWidth / 2}px, ${cursorY - cursor.offsetHeight / 2}px, 0)`;
-        requestAnimationFrame(animate);
+          function animate() {
+            cursorX += (mouseX - cursorX) * 0.15;
+            cursorY += (mouseY - cursorY) * 0.15;
+            cursor.style.transform = `translate3d(${cursorX - cursor.offsetWidth / 2}px, ${cursorY - cursor.offsetHeight / 2}px, 0)`;
+            requestAnimationFrame(animate);
+          }
+          animate();
+
+          document.querySelectorAll("a, button, .custom-select__trigger, .custom-option, input, textarea").forEach((link) => {
+            link.addEventListener("mouseenter", () => cursor.classList.add("expand"));
+            link.addEventListener("mouseleave", () => cursor.classList.remove("expand"));
+          });
       }
-      animate();
-
-      document.querySelectorAll("a, button, .custom-select__trigger, .custom-option, input, textarea").forEach((link) => {
-        link.addEventListener("mouseenter", () => cursor.classList.add("expand"));
-        link.addEventListener("mouseleave", () => cursor.classList.remove("expand"));
-      });
 
       // Custom Dropdown logic
       const dropdown = document.getElementById('packageDropdown');
